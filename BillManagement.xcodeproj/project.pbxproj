@@ -19,10 +19,6 @@
 		F03165AB185C6C49001EC383 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03165A9185C6C49001EC383 /* MainStoryboard_iPhone.storyboard */; };
 		F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03165AC185C6C49001EC383 /* MainStoryboard_iPad.storyboard */; };
 		F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */; };
-		F03165BF185C72CB001EC383 /* icon0.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165B7185C72CB001EC383 /* icon0.png */; };
-		F03165C0185C72CB001EC383 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165B9185C72CB001EC383 /* icon1.png */; };
-		F03165C1185C72CB001EC383 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165BB185C72CB001EC383 /* icon2.png */; };
-		F03165C2185C72CB001EC383 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165BD185C72CB001EC383 /* icon3.png */; };
 		F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */; };
 		F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */; };
 		F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */; };
@@ -30,6 +26,12 @@
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
 		F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */; };
+		F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */; };
+		F0B3373E185EE28900FC5CE3 /* icon0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373A185EE28900FC5CE3 /* icon0.png */; };
+		F0B3373F185EE28900FC5CE3 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373B185EE28900FC5CE3 /* icon1.png */; };
+		F0B33740185EE28900FC5CE3 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373C185EE28900FC5CE3 /* icon2.png */; };
+		F0B33741185EE28900FC5CE3 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373D185EE28900FC5CE3 /* icon3.png */; };
+		F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0B3374A185EF37700FC5CE3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,14 +48,8 @@
 		F03165A3185C6C48001EC383 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F03165A5185C6C49001EC383 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F03165A7185C6C49001EC383 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F03165AA185C6C49001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		F03165AD185C6C49001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		F03165AF185C6C49001EC383 /* CBMViewControllerEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerEntry.h; sourceTree = "<group>"; };
 		F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerEntry.m; sourceTree = "<group>"; };
-		F03165B8185C72CB001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/icon0.png; sourceTree = "<group>"; };
-		F03165BA185C72CB001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/icon1.png; sourceTree = "<group>"; };
-		F03165BC185C72CB001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/icon2.png; sourceTree = "<group>"; };
-		F03165BE185C72CB001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/icon3.png; sourceTree = "<group>"; };
 		F03165C6185CA15A001EC383 /* CBMViewControllerLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerLogIn.h; sourceTree = "<group>"; };
 		F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerLogIn.m; sourceTree = "<group>"; };
 		F03165C9185CA205001EC383 /* CBMViewControllerGroupList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerGroupList.h; sourceTree = "<group>"; };
@@ -68,6 +64,21 @@
 		F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMDataModelBillMember.m; sourceTree = "<group>"; };
 		F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddBill.h; sourceTree = "<group>"; };
 		F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddBill.m; sourceTree = "<group>"; };
+		F0AC54EC185EF9D800CC0C6D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPhone.strings"; sourceTree = "<group>"; };
+		F0AC54ED185EFDFE00CC0C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
+		F0AC54EE185EFE1300CC0C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
+		F0AC54EF185EFE1500CC0C6D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPad.strings"; sourceTree = "<group>"; };
+		F0B33729185ED66700FC5CE3 /* CBMViewControllerAccountApply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAccountApply.h; sourceTree = "<group>"; };
+		F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAccountApply.m; sourceTree = "<group>"; };
+		F0B33739185EE20C00FC5CE3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F0B3373A185EE28900FC5CE3 /* icon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon0.png; sourceTree = "<group>"; };
+		F0B3373B185EE28900FC5CE3 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		F0B3373C185EE28900FC5CE3 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		F0B3373D185EE28900FC5CE3 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		F0B33749185EF37700FC5CE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0B3374B185EF37C00FC5CE3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F0B3374C185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F0B3374D185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +125,7 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F0B3374A185EF37700FC5CE3 /* Localizable.strings */,
 				F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */,
 				F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */,
 				F07A731C185DE0F000183A43 /* CBMDataModelBillMember.h */,
@@ -126,6 +138,8 @@
 				F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */,
 				F03165C6185CA15A001EC383 /* CBMViewControllerLogIn.h */,
 				F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */,
+				F0B33729185ED66700FC5CE3 /* CBMViewControllerAccountApply.h */,
+				F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */,
 				F03165C9185CA205001EC383 /* CBMViewControllerGroupList.h */,
 				F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */,
 				F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */,
@@ -142,10 +156,10 @@
 		F0316598185C6C48001EC383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F03165B7185C72CB001EC383 /* icon0.png */,
-				F03165B9185C72CB001EC383 /* icon1.png */,
-				F03165BB185C72CB001EC383 /* icon2.png */,
-				F03165BD185C72CB001EC383 /* icon3.png */,
+				F0B3373A185EE28900FC5CE3 /* icon0.png */,
+				F0B3373B185EE28900FC5CE3 /* icon1.png */,
+				F0B3373C185EE28900FC5CE3 /* icon2.png */,
+				F0B3373D185EE28900FC5CE3 /* icon3.png */,
 				F0316599185C6C48001EC383 /* BillManagement-Info.plist */,
 				F031659A185C6C48001EC383 /* InfoPlist.strings */,
 				F031659D185C6C48001EC383 /* main.m */,
@@ -193,6 +207,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
+				Base,
 			);
 			mainGroup = F0316582185C6C48001EC383;
 			productRefGroup = F031658E185C6C48001EC383 /* Products */;
@@ -215,10 +231,11 @@
 				F03165A8185C6C49001EC383 /* Default-568h@2x.png in Resources */,
 				F03165AB185C6C49001EC383 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */,
-				F03165BF185C72CB001EC383 /* icon0.png in Resources */,
-				F03165C0185C72CB001EC383 /* icon1.png in Resources */,
-				F03165C1185C72CB001EC383 /* icon2.png in Resources */,
-				F03165C2185C72CB001EC383 /* icon3.png in Resources */,
+				F0B3373E185EE28900FC5CE3 /* icon0.png in Resources */,
+				F0B3373F185EE28900FC5CE3 /* icon1.png in Resources */,
+				F0B33740185EE28900FC5CE3 /* icon2.png in Resources */,
+				F0B33741185EE28900FC5CE3 /* icon3.png in Resources */,
+				F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +256,7 @@
 				F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */,
 				F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */,
 				F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */,
+				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +267,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F031659B185C6C48001EC383 /* en */,
+				F0B33739185EE20C00FC5CE3 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -256,7 +275,9 @@
 		F03165A9185C6C49001EC383 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F03165AA185C6C49001EC383 /* en */,
+				F0B3374C185EF5CD00FC5CE3 /* Base */,
+				F0AC54EC185EF9D800CC0C6D /* zh-Hant */,
+				F0AC54ED185EFDFE00CC0C6D /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -264,41 +285,20 @@
 		F03165AC185C6C49001EC383 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F03165AD185C6C49001EC383 /* en */,
+				F0B3374D185EF5CD00FC5CE3 /* Base */,
+				F0AC54EE185EFE1300CC0C6D /* en */,
+				F0AC54EF185EFE1500CC0C6D /* zh-Hant */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		F03165B7185C72CB001EC383 /* icon0.png */ = {
+		F0B3374A185EF37700FC5CE3 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F03165B8185C72CB001EC383 /* en */,
+				F0B33749185EF37700FC5CE3 /* en */,
+				F0B3374B185EF37C00FC5CE3 /* zh-Hant */,
 			);
-			name = icon0.png;
-			sourceTree = "<group>";
-		};
-		F03165B9185C72CB001EC383 /* icon1.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F03165BA185C72CB001EC383 /* en */,
-			);
-			name = icon1.png;
-			sourceTree = "<group>";
-		};
-		F03165BB185C72CB001EC383 /* icon2.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F03165BC185C72CB001EC383 /* en */,
-			);
-			name = icon2.png;
-			sourceTree = "<group>";
-		};
-		F03165BD185C72CB001EC383 /* icon3.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F03165BE185C72CB001EC383 /* en */,
-			);
-			name = icon3.png;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

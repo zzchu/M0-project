@@ -1,18 +1,18 @@
 //
-//  CBMViewControllerAddGroup.m
+//  CBMViewControllerAccountApply.m
 //  BillManagement
 //
-//  Created by zhaozheng chu on 15/12/13.
-//  Copyright (c) 2013 zhaozheng chu. All rights reserved.
+//  Created by zhaozheng on 13-12-16.
+//  Copyright (c) 2013年 zhaozheng chu. All rights reserved.
 //
 
-#import "CBMViewControllerAddGroup.h"
+#import "CBMViewControllerAccountApply.h"
 
-@interface CBMViewControllerAddGroup ()
+@interface CBMViewControllerAccountApply ()
 
 @end
 
-@implementation CBMViewControllerAddGroup
+@implementation CBMViewControllerAccountApply
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataModelGroupMember = nil;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -92,20 +92,4 @@
      */
 }
 
-- (IBAction)btSaveGroupMember:(id)sender {
-    if (self.tfGroupName.text.length > 0 ) {
-        self.dataModelGroupMember = [[CBMDataModelGroupMember alloc] init];
-        self.dataModelGroupMember.sGroupName = self.tfGroupName.text;
-        [self performSegueWithIdentifier:@"UnwindSegueChildAddToGroupList" sender:self];
-    }
-    else
-    {
-        UIAlertView *alertWindow = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LABEL_ALERT_ERROR", @"the title for error alert")
-                                                              message:NSLocalizedString(@"LABEL_ALERT_ERROR_INFO", @"the info for error alert") //@"Input message is fault"
-                                                             delegate:self
-                                                    cancelButtonTitle:NSLocalizedString(@"LABEL_ALERT_OK", @"the title text for alert cancel button") //@"OK"
-                                                    otherButtonTitles:nil];
-        [alertWindow show];
-    }
-}
 @end

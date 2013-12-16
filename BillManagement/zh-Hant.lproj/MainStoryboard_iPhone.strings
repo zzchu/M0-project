@@ -1,0 +1,36 @@
+
+/* Class = "IBUINavigationItem"; title = "Bill List"; ObjectID = "ED0-Jc-lfj"; */
+"ED0-Jc-lfj.title" = "Bill List";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "FUs-V3-0X9"; */
+"FUs-V3-0X9.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Main"; ObjectID = "FcE-xB-WQq"; */
+"FcE-xB-WQq.title" = "Main";
+
+/* Class = "IBUIButton"; normalTitle = "Apply"; ObjectID = "OKq-cz-f7u"; */
+"OKq-cz-f7u.normalTitle" = "Apply";
+
+/* Class = "IBUIBarButtonItem"; title = "Main"; ObjectID = "OlP-v0-Iya"; */
+"OlP-v0-Iya.title" = "Main";
+
+/* Class = "IBUILabel"; text = "Bill Name:"; ObjectID = "Raw-pm-mve"; */
+"Raw-pm-mve.text" = "Bill Name:";
+
+/* Class = "IBUILabel"; text = "User Name:"; ObjectID = "Wyc-Fv-BkZ"; */
+"Wyc-Fv-BkZ.text" = "User Name:";
+
+/* Class = "IBUILabel"; text = "Group Name:"; ObjectID = "cOz-fQ-65n"; */
+"cOz-fQ-65n.text" = "Group Name:";
+
+/* Class = "IBUINavigationItem"; title = "Group List"; ObjectID = "jGI-fH-KBm"; */
+"jGI-fH-KBm.title" = "Group List";
+
+/* Class = "IBUIBarButtonItem"; title = "LogIn"; ObjectID = "mPb-BP-L2o"; */
+"mPb-BP-L2o.title" = "LogIn";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "trU-LC-Arf"; */
+"trU-LC-Arf.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "LogIn"; ObjectID = "wcY-7m-NXK"; */
+"wcY-7m-NXK.normalTitle" = "LogIn";

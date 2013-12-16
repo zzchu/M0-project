@@ -100,7 +100,11 @@
     }
     else
     {
-        UIAlertView *alertWindow = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Input message is fault" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alertWindow = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LABEL_ALERT_ERROR", @"the title for error alert")
+                                                              message:NSLocalizedString(@"LABEL_ALERT_ERROR_INFO", @"the info for error alert") //@"Input message is fault"
+                                                             delegate:self
+                                                    cancelButtonTitle:NSLocalizedString(@"LABEL_ALERT_OK", @"the title text for alert cancel button") //@"OK"
+                                                    otherButtonTitles:nil];
         [alertWindow show];
     }
 }
