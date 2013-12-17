@@ -10,7 +10,6 @@
 #import "CBMDataModelBillMember.h"
 
 @interface CBMViewControllerBillList : UITableViewController
-
 @property (retain) NSMutableArray *arryBillList;
 
 @end

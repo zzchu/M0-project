@@ -1,21 +1,18 @@
 //
-//  CBMViewControllerBillList.m
+//  CBMViewControllerShowBill.m
 //  BillManagement
 //
-//  Created by zhaozheng chu on 14/12/13.
+//  Created by zhaozheng chu on 16/12/13.
 //  Copyright (c) 2013 zhaozheng chu. All rights reserved.
 //
 
-#import "CBMViewControllerBillList.h"
+#import "CBMViewControllerShowBill.h"
 
-@interface CBMViewControllerBillList ()
-{
-    NSUInteger selectedBillRow;
-}
+@interface CBMViewControllerShowBill ()
 
 @end
 
-@implementation CBMViewControllerBillList
+@implementation CBMViewControllerShowBill
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,10 +27,6 @@
 {
     [super viewDidLoad];
 
-    //Initial
-    selectedBillRow = NSNotFound;
-    
-    self.arryBillList = [[NSMutableArray alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -46,34 +39,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return [self.arryBillList count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"BillListPrototypeCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    CBMDataModelBillMember *dataModelBillMember = [self.arryBillList objectAtIndex:indexPath.row];
-    cell.textLabel.text = dataModelBillMember.sBillName;
-    return cell;
-}
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,31 +89,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    selectedBillRow = indexPath.row;
-    
 }
-
-#pragma mark - unwind
-- (IBAction)backBillList:(UIStoryboardSegue *)segue
-{
-    if ([segue.identifier isEqualToString:@"UnwindSegueCancelToBillList"] == YES) {
-        
-    }
-    else if ([segue.identifier isEqualToString:@"UnwindSegueChildAddToBillList"] == YES)
-    {
-        [self.arryBillList addObject:[segue.sourceViewController valueForKey:@"dataModelBillMember"]];
-        [self.tableView reloadData];
-    }
-    
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"SegueShowBillDetail"] == YES) {
-        
-    }
-    
-}
-
 
 @end

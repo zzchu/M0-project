@@ -22,6 +22,7 @@
 		F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */; };
 		F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */; };
 		F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */; };
+		F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */; };
 		F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */; };
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
@@ -56,6 +57,8 @@
 		F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerGroupList.m; sourceTree = "<group>"; };
 		F03165CC185CA237001EC383 /* CBMViewControllerBillList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerBillList.h; sourceTree = "<group>"; };
 		F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerBillList.m; sourceTree = "<group>"; };
+		F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerShowBill.h; sourceTree = "<group>"; };
+		F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerShowBill.m; sourceTree = "<group>"; };
 		F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddGroup.h; sourceTree = "<group>"; };
 		F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddGroup.m; sourceTree = "<group>"; };
 		F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMDataModelGroupMember.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */,
 				F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */,
 				F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */,
+				F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */,
+				F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */,
 				F0316598185C6C48001EC383 /* Supporting Files */,
 			);
 			path = BillManagement;
@@ -257,6 +262,7 @@
 				F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */,
 				F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */,
 				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
+				F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
