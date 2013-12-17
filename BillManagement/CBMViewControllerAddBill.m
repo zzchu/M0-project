@@ -10,6 +10,8 @@
 
 @interface CBMViewControllerAddBill ()
 
+
+
 @end
 
 @implementation CBMViewControllerAddBill
@@ -27,6 +29,9 @@
 {
     [super viewDidLoad];
     self.dataModelBillMember = nil;
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.allowsEditing = YES;
+    self.imagePickerController.delegate = self;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -107,5 +112,24 @@
                                                     otherButtonTitles:nil];
         [alertWindow show];
     }
+}
+- (IBAction)btCaptureImage:(id)sender {
+    if ([sender tag] == 1)
+    {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    }
+else
+{
+    self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+}
+
+[self presentModalViewController:self.imagePickerController animated:YES];
+
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self.imagePickerController dismissViewControllerAnimated:YES completion:NULL];
+    self.ivBillImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
 }
 @end

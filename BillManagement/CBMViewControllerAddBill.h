@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "CBMDataModelBillMember.h"
-@interface CBMViewControllerAddBill : UITableViewController
+@interface CBMViewControllerAddBill : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate >
 @property (weak, nonatomic) IBOutlet UITextField *tfBillName;
-
+@property (retain) UIImagePickerController *imagePickerController;
 @property (retain) CBMDataModelBillMember *dataModelBillMember;
 - (IBAction)btSaveBillMember:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIImageView *ivBillImage;
+- (IBAction)btCaptureImage:(id)sender;
+
 
 @end
