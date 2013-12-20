@@ -116,15 +116,14 @@
 - (IBAction)btCaptureImage:(id)sender {
     if ([sender tag] == 1)
     {
-        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
-else
-{
-    self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-}
-
-[self presentModalViewController:self.imagePickerController animated:YES];
-
+    else
+    {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    
+    [self presentViewController:self.imagePickerController animated:YES completion:NULL];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

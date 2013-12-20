@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02F93C9186418AB009C889C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02F93C8186418AB009C889C /* SectionHeaderView.xib */; };
+		F02F93CC18641E32009C889C /* carat-open.png in Resources */ = {isa = PBXBuildFile; fileRef = F02F93CA18641E32009C889C /* carat-open.png */; };
+		F02F93CD18641E32009C889C /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = F02F93CB18641E32009C889C /* carat.png */; };
 		F0316592185C6C48001EC383 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316591185C6C48001EC383 /* UIKit.framework */; };
 		F0316594185C6C48001EC383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316593185C6C48001EC383 /* Foundation.framework */; };
 		F0316596185C6C48001EC383 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316595185C6C48001EC383 /* CoreGraphics.framework */; };
@@ -23,6 +26,8 @@
 		F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */; };
 		F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */; };
 		F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */; };
+		F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A61864084000194E94 /* CBMBillListSectionInfo.m */; };
+		F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A81864084000194E94 /* CBMSectionHeaderView.m */; };
 		F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */; };
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
@@ -36,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F02F93C8186418AB009C889C /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		F02F93CA18641E32009C889C /* carat-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carat-open.png"; sourceTree = "<group>"; };
+		F02F93CB18641E32009C889C /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
 		F031658D185C6C48001EC383 /* BillManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0316591185C6C48001EC383 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0316593185C6C48001EC383 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +67,10 @@
 		F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerBillList.m; sourceTree = "<group>"; };
 		F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerShowBill.h; sourceTree = "<group>"; };
 		F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerShowBill.m; sourceTree = "<group>"; };
+		F04505A51864084000194E94 /* CBMBillListSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMBillListSectionInfo.h; sourceTree = "<group>"; };
+		F04505A61864084000194E94 /* CBMBillListSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMBillListSectionInfo.m; sourceTree = "<group>"; };
+		F04505A71864084000194E94 /* CBMSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMSectionHeaderView.h; sourceTree = "<group>"; };
+		F04505A81864084000194E94 /* CBMSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMSectionHeaderView.m; sourceTree = "<group>"; };
 		F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddGroup.h; sourceTree = "<group>"; };
 		F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddGroup.m; sourceTree = "<group>"; };
 		F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMDataModelGroupMember.h; sourceTree = "<group>"; };
@@ -80,8 +92,8 @@
 		F0B3373D185EE28900FC5CE3 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 		F0B33749185EF37700FC5CE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F0B3374B185EF37C00FC5CE3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		F0B3374C185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		F0B3374D185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F0B3374C185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F0B3374D185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,8 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F04505A71864084000194E94 /* CBMSectionHeaderView.h */,
+				F04505A81864084000194E94 /* CBMSectionHeaderView.m */,
 				F0B3374A185EF37700FC5CE3 /* Localizable.strings */,
 				F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */,
 				F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */,
@@ -149,6 +163,8 @@
 				F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */,
 				F03165CC185CA237001EC383 /* CBMViewControllerBillList.h */,
 				F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */,
+				F04505A51864084000194E94 /* CBMBillListSectionInfo.h */,
+				F04505A61864084000194E94 /* CBMBillListSectionInfo.m */,
 				F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */,
 				F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */,
 				F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */,
@@ -161,6 +177,9 @@
 		F0316598185C6C48001EC383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F02F93CA18641E32009C889C /* carat-open.png */,
+				F02F93CB18641E32009C889C /* carat.png */,
+				F02F93C8186418AB009C889C /* SectionHeaderView.xib */,
 				F0B3373A185EE28900FC5CE3 /* icon0.png */,
 				F0B3373B185EE28900FC5CE3 /* icon1.png */,
 				F0B3373C185EE28900FC5CE3 /* icon2.png */,
@@ -241,6 +260,9 @@
 				F0B33740185EE28900FC5CE3 /* icon2.png in Resources */,
 				F0B33741185EE28900FC5CE3 /* icon3.png in Resources */,
 				F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */,
+				F02F93C9186418AB009C889C /* SectionHeaderView.xib in Resources */,
+				F02F93CC18641E32009C889C /* carat-open.png in Resources */,
+				F02F93CD18641E32009C889C /* carat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */,
 				F031659E185C6C48001EC383 /* main.m in Sources */,
 				F03165A2185C6C48001EC383 /* CBMAppDelegate.m in Sources */,
 				F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */,
+				F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */,
 				F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */,
 				F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */,
 				F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */,

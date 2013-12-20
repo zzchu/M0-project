@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CBMDataModelBillMember.h"
+#import "CBMSectionHeaderView.h"
+@interface CBMViewControllerBillList : UITableViewController <SectionHeaderViewDelegate>
 
-@interface CBMViewControllerBillList : UITableViewController
-@property (retain) NSMutableArray *arryBillList;
+//Get from server, include section info and bill info
+@property (retain) NSMutableArray *arrayBillList;
 
 @end
