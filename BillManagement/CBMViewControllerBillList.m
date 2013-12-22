@@ -23,7 +23,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 @end
 
-#define DEFAULT_ROW_HEIGHT 88
+#define DEFAULT_ROW_HEIGHT 48
 #define HEADER_HEIGHT 48
 
 @implementation CBMViewControllerBillList

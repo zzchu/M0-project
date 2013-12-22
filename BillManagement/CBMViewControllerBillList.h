@@ -14,4 +14,6 @@
 //Get from server, include section info and bill info
 @property (retain) NSMutableArray *arrayBillList;
 
+//unwind segue
+- (IBAction)backBillList:(UIStoryboardSegue *)segue;
 @end

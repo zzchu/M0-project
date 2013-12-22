@@ -1,22 +1,18 @@
 //
-//  CBMViewControllerAddBill.m
+//  CBMViewControllerLocalBillList.m
 //  BillManagement
 //
-//  Created by zhaozheng chu on 15/12/13.
+//  Created by zhaozheng chu on 22/12/13.
 //  Copyright (c) 2013 zhaozheng chu. All rights reserved.
 //
 
-#import "CBMViewControllerAddBill.h"
+#import "CBMViewControllerLocalBillList.h"
 
-@interface CBMViewControllerAddBill ()
-
-
+@interface CBMViewControllerLocalBillList ()
 
 @end
 
-#define ROW_OF_IMAGE   (1)
-
-@implementation CBMViewControllerAddBill
+@implementation CBMViewControllerLocalBillList
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,10 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataModelBillMember = nil;
-    self.imagePickerController = [[UIImagePickerController alloc] init];
-    self.imagePickerController.allowsEditing = YES;
-    self.imagePickerController.delegate = self;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -45,6 +38,32 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
 }
 
 /*
@@ -99,41 +118,9 @@
      */
 }
 
-- (IBAction)btSaveBillMember:(id)sender {
-    if (self.tfBillName.text.length > 0 ) {
-        self.dataModelBillMember = [[CBMDataModelBillMember alloc] init];
-        self.dataModelBillMember.sBillName = self.tfBillName.text;
-        [self performSegueWithIdentifier:@"UnwindSegueChildAddToLocalBillList" sender:self];
-    }
-    else
-    {
-        UIAlertView *alertWindow = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LABEL_ALERT_ERROR", @"the title for error alert")
-                                                              message:NSLocalizedString(@"LABEL_ALERT_ERROR_INFO", @"the info for error alert") //@"Input message is fault"
-                                                             delegate:self
-                                                    cancelButtonTitle:NSLocalizedString(@"LABEL_ALERT_OK", @"the title text for alert cancel button") //@"OK"
-                                                    otherButtonTitles:nil];
-        [alertWindow show];
-    }
-}
-- (IBAction)btCaptureImage:(id)sender {
-    if ([sender tag] == 1)
-    {
-        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    }
-    else
-    {
-        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    }
-    
-    [self presentViewController:self.imagePickerController animated:YES completion:NULL];
+#pragma mark - unwind segue
+- (IBAction)backLocalBillList:(UIStoryboardSegue *)segue
+{
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    [self.imagePickerController dismissViewControllerAnimated:YES completion:NULL];
-    self.ivBillImage.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-    [self.tableView beginUpdates];
-    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:ROW_OF_IMAGE inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
-    [self.tableView endUpdates];
-}
 @end
