@@ -33,7 +33,7 @@
 		F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */; };
 		F093158B186705720073E0F6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0931589186705720073E0F6 /* MainStoryboard_iPhone.storyboard */; };
 		F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */ = {isa = PBXBuildFile; fileRef = F093158F186709380073E0F6 /* CBMViewControllerActionlist.m */; };
-		F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F09315921867096F0073E0F6 /* CBMViewControllerLocalBillList.m */; };
+		F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Frameworks */ = {isa = PBXBuildFile; fileRef = F09315921867096F0073E0F6 /* CBMViewControllerLocalBillList.m */; };
 		F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */; };
 		F0B3373E185EE28900FC5CE3 /* icon0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373A185EE28900FC5CE3 /* icon0.png */; };
 		F0B3373F185EE28900FC5CE3 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373B185EE28900FC5CE3 /* icon1.png */; };
@@ -81,6 +81,8 @@
 		F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMDataModelBillMember.m; sourceTree = "<group>"; };
 		F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddBill.h; sourceTree = "<group>"; };
 		F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddBill.m; sourceTree = "<group>"; };
+		F083485B186D4C4700183D2D /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		F083485C186D4C4700183D2D /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		F093158A186705720073E0F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F093158C186705800073E0F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
 		F093158D186705830073E0F6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPhone.strings"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Frameworks */,
 				F0316592185C6C48001EC383 /* UIKit.framework in Frameworks */,
 				F0316594185C6C48001EC383 /* Foundation.framework in Frameworks */,
 				F0316596185C6C48001EC383 /* CoreGraphics.framework in Frameworks */,
@@ -146,6 +149,7 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F083485A186D4C4700183D2D /* RefreshTableHeaderView */,
 				F04505A71864084000194E94 /* CBMSectionHeaderView.h */,
 				F04505A81864084000194E94 /* CBMSectionHeaderView.m */,
 				F0B3374A185EF37700FC5CE3 /* Localizable.strings */,
@@ -203,6 +207,15 @@
 				F03165A7185C6C49001EC383 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F083485A186D4C4700183D2D /* RefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F083485B186D4C4700183D2D /* EGORefreshTableHeaderView.h */,
+				F083485C186D4C4700183D2D /* EGORefreshTableHeaderView.m */,
+			);
+			path = RefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +311,6 @@
 				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
 				F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */,
 				F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */,
-				F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
