@@ -7,58 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F02F93C9186418AB009C889C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02F93C8186418AB009C889C /* SectionHeaderView.xib */; };
-		F02F93CC18641E32009C889C /* carat-open.png in Resources */ = {isa = PBXBuildFile; fileRef = F02F93CA18641E32009C889C /* carat-open.png */; };
-		F02F93CD18641E32009C889C /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = F02F93CB18641E32009C889C /* carat.png */; };
 		F0316592185C6C48001EC383 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316591185C6C48001EC383 /* UIKit.framework */; };
 		F0316594185C6C48001EC383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316593185C6C48001EC383 /* Foundation.framework */; };
 		F0316596185C6C48001EC383 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316595185C6C48001EC383 /* CoreGraphics.framework */; };
 		F031659C185C6C48001EC383 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F031659A185C6C48001EC383 /* InfoPlist.strings */; };
 		F031659E185C6C48001EC383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F031659D185C6C48001EC383 /* main.m */; };
 		F03165A2185C6C48001EC383 /* CBMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165A1185C6C48001EC383 /* CBMAppDelegate.m */; };
-		F03165A4185C6C48001EC383 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165A3185C6C48001EC383 /* Default.png */; };
-		F03165A6185C6C49001EC383 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165A5185C6C49001EC383 /* Default@2x.png */; };
-		F03165A8185C6C49001EC383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03165A7185C6C49001EC383 /* Default-568h@2x.png */; };
 		F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03165AC185C6C49001EC383 /* MainStoryboard_iPad.storyboard */; };
 		F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */; };
 		F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */; };
 		F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */; };
 		F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */; };
 		F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */; };
+		F0445DE7187155EA00A0D2EF /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DDF187155EA00A0D2EF /* blackArrow.png */; };
+		F0445DE8187155EA00A0D2EF /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE0187155EA00A0D2EF /* blackArrow@2x.png */; };
+		F0445DE9187155EA00A0D2EF /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE1187155EA00A0D2EF /* blueArrow.png */; };
+		F0445DEA187155EA00A0D2EF /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE2187155EA00A0D2EF /* blueArrow@2x.png */; };
+		F0445DEB187155EA00A0D2EF /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE3187155EA00A0D2EF /* grayArrow.png */; };
+		F0445DEC187155EA00A0D2EF /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE4187155EA00A0D2EF /* grayArrow@2x.png */; };
+		F0445DED187155EA00A0D2EF /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE5187155EA00A0D2EF /* whiteArrow.png */; };
+		F0445DEE187155EA00A0D2EF /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */; };
+		F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */ = {isa = PBXBuildFile; fileRef = F0445E61187158DD00A0D2EF /* CBMViewControllerMemberList.m */; };
 		F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A61864084000194E94 /* CBMBillListSectionInfo.m */; };
 		F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A81864084000194E94 /* CBMSectionHeaderView.m */; };
+		F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083485C186D4C4700183D2D /* EGORefreshTableHeaderView.m */; };
+		F051E05A187145CC00D5FE7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F051E059187145CC00D5FE7A /* QuartzCore.framework */; };
 		F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */; };
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
 		F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */; };
 		F093158B186705720073E0F6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0931589186705720073E0F6 /* MainStoryboard_iPhone.storyboard */; };
 		F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */ = {isa = PBXBuildFile; fileRef = F093158F186709380073E0F6 /* CBMViewControllerActionlist.m */; };
-		F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Frameworks */ = {isa = PBXBuildFile; fileRef = F09315921867096F0073E0F6 /* CBMViewControllerLocalBillList.m */; };
 		F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */; };
-		F0B3373E185EE28900FC5CE3 /* icon0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373A185EE28900FC5CE3 /* icon0.png */; };
-		F0B3373F185EE28900FC5CE3 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373B185EE28900FC5CE3 /* icon1.png */; };
-		F0B33740185EE28900FC5CE3 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373C185EE28900FC5CE3 /* icon2.png */; };
-		F0B33741185EE28900FC5CE3 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B3373D185EE28900FC5CE3 /* icon3.png */; };
 		F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0B3374A185EF37700FC5CE3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F02F93C8186418AB009C889C /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
-		F02F93CA18641E32009C889C /* carat-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carat-open.png"; sourceTree = "<group>"; };
-		F02F93CB18641E32009C889C /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		F025B6451871517200B1A2B1 /* carat-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carat-open.png"; path = "Resource/carat-open.png"; sourceTree = "<group>"; };
+		F025B6461871517200B1A2B1 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carat.png; path = Resource/carat.png; sourceTree = "<group>"; };
+		F025B6471871517200B1A2B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resource/Default-568h@2x.png"; sourceTree = "<group>"; };
+		F025B6481871517200B1A2B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resource/Default.png; sourceTree = "<group>"; };
+		F025B6491871517200B1A2B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resource/Default@2x.png"; sourceTree = "<group>"; };
+		F025B64A1871517200B1A2B1 /* icon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon0.png; path = Resource/icon0.png; sourceTree = "<group>"; };
+		F025B64B1871517200B1A2B1 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = Resource/icon1.png; sourceTree = "<group>"; };
+		F025B64C1871517200B1A2B1 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = Resource/icon2.png; sourceTree = "<group>"; };
+		F025B64D1871517200B1A2B1 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon3.png; path = Resource/icon3.png; sourceTree = "<group>"; };
+		F025B64E1871517200B1A2B1 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SectionHeaderView.xib; path = Resource/SectionHeaderView.xib; sourceTree = "<group>"; };
+		F025B64F1871535600B1A2B1 /* BillManagement-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BillManagement-Info.plist"; sourceTree = "<group>"; };
+		F025B6501871535600B1A2B1 /* BillManagement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BillManagement-Prefix.pch"; sourceTree = "<group>"; };
 		F031658D185C6C48001EC383 /* BillManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0316591185C6C48001EC383 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0316593185C6C48001EC383 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F0316595185C6C48001EC383 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F0316599185C6C48001EC383 /* BillManagement-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BillManagement-Info.plist"; sourceTree = "<group>"; };
 		F031659B185C6C48001EC383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F031659D185C6C48001EC383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F031659F185C6C48001EC383 /* BillManagement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BillManagement-Prefix.pch"; sourceTree = "<group>"; };
 		F03165A0185C6C48001EC383 /* CBMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMAppDelegate.h; sourceTree = "<group>"; };
 		F03165A1185C6C48001EC383 /* CBMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMAppDelegate.m; sourceTree = "<group>"; };
-		F03165A3185C6C48001EC383 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F03165A5185C6C49001EC383 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F03165A7185C6C49001EC383 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F03165AF185C6C49001EC383 /* CBMViewControllerEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerEntry.h; sourceTree = "<group>"; };
 		F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerEntry.m; sourceTree = "<group>"; };
 		F03165C6185CA15A001EC383 /* CBMViewControllerLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerLogIn.h; sourceTree = "<group>"; };
@@ -69,10 +73,21 @@
 		F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerBillList.m; sourceTree = "<group>"; };
 		F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerShowBill.h; sourceTree = "<group>"; };
 		F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerShowBill.m; sourceTree = "<group>"; };
+		F0445DDF187155EA00A0D2EF /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackArrow.png; path = Resource/blackArrow.png; sourceTree = "<group>"; };
+		F0445DE0187155EA00A0D2EF /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackArrow@2x.png"; path = "Resource/blackArrow@2x.png"; sourceTree = "<group>"; };
+		F0445DE1187155EA00A0D2EF /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueArrow.png; path = Resource/blueArrow.png; sourceTree = "<group>"; };
+		F0445DE2187155EA00A0D2EF /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blueArrow@2x.png"; path = "Resource/blueArrow@2x.png"; sourceTree = "<group>"; };
+		F0445DE3187155EA00A0D2EF /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = Resource/grayArrow.png; sourceTree = "<group>"; };
+		F0445DE4187155EA00A0D2EF /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "Resource/grayArrow@2x.png"; sourceTree = "<group>"; };
+		F0445DE5187155EA00A0D2EF /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Resource/whiteArrow.png; sourceTree = "<group>"; };
+		F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whiteArrow@2x.png"; path = "Resource/whiteArrow@2x.png"; sourceTree = "<group>"; };
+		F0445E60187158DD00A0D2EF /* CBMViewControllerMemberList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerMemberList.h; sourceTree = "<group>"; };
+		F0445E61187158DD00A0D2EF /* CBMViewControllerMemberList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerMemberList.m; sourceTree = "<group>"; };
 		F04505A51864084000194E94 /* CBMBillListSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMBillListSectionInfo.h; sourceTree = "<group>"; };
 		F04505A61864084000194E94 /* CBMBillListSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMBillListSectionInfo.m; sourceTree = "<group>"; };
 		F04505A71864084000194E94 /* CBMSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMSectionHeaderView.h; sourceTree = "<group>"; };
 		F04505A81864084000194E94 /* CBMSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMSectionHeaderView.m; sourceTree = "<group>"; };
+		F051E059187145CC00D5FE7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddGroup.h; sourceTree = "<group>"; };
 		F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddGroup.m; sourceTree = "<group>"; };
 		F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMDataModelGroupMember.h; sourceTree = "<group>"; };
@@ -88,17 +103,11 @@
 		F093158D186705830073E0F6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPhone.strings"; sourceTree = "<group>"; };
 		F093158E186709380073E0F6 /* CBMViewControllerActionlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerActionlist.h; sourceTree = "<group>"; };
 		F093158F186709380073E0F6 /* CBMViewControllerActionlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerActionlist.m; sourceTree = "<group>"; };
-		F09315911867096F0073E0F6 /* CBMViewControllerLocalBillList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerLocalBillList.h; sourceTree = "<group>"; };
-		F09315921867096F0073E0F6 /* CBMViewControllerLocalBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerLocalBillList.m; sourceTree = "<group>"; };
 		F0AC54EE185EFE1300CC0C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
 		F0AC54EF185EFE1500CC0C6D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPad.strings"; sourceTree = "<group>"; };
 		F0B33729185ED66700FC5CE3 /* CBMViewControllerAccountApply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAccountApply.h; sourceTree = "<group>"; };
 		F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAccountApply.m; sourceTree = "<group>"; };
 		F0B33739185EE20C00FC5CE3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		F0B3373A185EE28900FC5CE3 /* icon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon0.png; sourceTree = "<group>"; };
-		F0B3373B185EE28900FC5CE3 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
-		F0B3373C185EE28900FC5CE3 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
-		F0B3373D185EE28900FC5CE3 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 		F0B33749185EF37700FC5CE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F0B3374B185EF37C00FC5CE3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F0B3374D185EF5CD00FC5CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -109,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09315931867096F0073E0F6 /* CBMViewControllerLocalBillList.m in Frameworks */,
+				F051E05A187145CC00D5FE7A /* QuartzCore.framework in Frameworks */,
 				F0316592185C6C48001EC383 /* UIKit.framework in Frameworks */,
 				F0316594185C6C48001EC383 /* Foundation.framework in Frameworks */,
 				F0316596185C6C48001EC383 /* CoreGraphics.framework in Frameworks */,
@@ -139,6 +148,7 @@
 		F0316590185C6C48001EC383 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F051E059187145CC00D5FE7A /* QuartzCore.framework */,
 				F0316591185C6C48001EC383 /* UIKit.framework */,
 				F0316593185C6C48001EC383 /* Foundation.framework */,
 				F0316595185C6C48001EC383 /* CoreGraphics.framework */,
@@ -173,16 +183,16 @@
 				F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */,
 				F03165CC185CA237001EC383 /* CBMViewControllerBillList.h */,
 				F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */,
+				F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */,
+				F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */,
 				F04505A51864084000194E94 /* CBMBillListSectionInfo.h */,
 				F04505A61864084000194E94 /* CBMBillListSectionInfo.m */,
 				F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */,
 				F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */,
 				F093158E186709380073E0F6 /* CBMViewControllerActionlist.h */,
 				F093158F186709380073E0F6 /* CBMViewControllerActionlist.m */,
-				F09315911867096F0073E0F6 /* CBMViewControllerLocalBillList.h */,
-				F09315921867096F0073E0F6 /* CBMViewControllerLocalBillList.m */,
-				F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */,
-				F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */,
+				F0445E60187158DD00A0D2EF /* CBMViewControllerMemberList.h */,
+				F0445E61187158DD00A0D2EF /* CBMViewControllerMemberList.m */,
 				F0316598185C6C48001EC383 /* Supporting Files */,
 			);
 			path = BillManagement;
@@ -191,20 +201,28 @@
 		F0316598185C6C48001EC383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F02F93CA18641E32009C889C /* carat-open.png */,
-				F02F93CB18641E32009C889C /* carat.png */,
-				F02F93C8186418AB009C889C /* SectionHeaderView.xib */,
-				F0B3373A185EE28900FC5CE3 /* icon0.png */,
-				F0B3373B185EE28900FC5CE3 /* icon1.png */,
-				F0B3373C185EE28900FC5CE3 /* icon2.png */,
-				F0B3373D185EE28900FC5CE3 /* icon3.png */,
-				F0316599185C6C48001EC383 /* BillManagement-Info.plist */,
+				F0445DDF187155EA00A0D2EF /* blackArrow.png */,
+				F0445DE0187155EA00A0D2EF /* blackArrow@2x.png */,
+				F0445DE1187155EA00A0D2EF /* blueArrow.png */,
+				F0445DE2187155EA00A0D2EF /* blueArrow@2x.png */,
+				F0445DE3187155EA00A0D2EF /* grayArrow.png */,
+				F0445DE4187155EA00A0D2EF /* grayArrow@2x.png */,
+				F0445DE5187155EA00A0D2EF /* whiteArrow.png */,
+				F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */,
+				F025B64F1871535600B1A2B1 /* BillManagement-Info.plist */,
+				F025B6501871535600B1A2B1 /* BillManagement-Prefix.pch */,
+				F025B6451871517200B1A2B1 /* carat-open.png */,
+				F025B6461871517200B1A2B1 /* carat.png */,
+				F025B6471871517200B1A2B1 /* Default-568h@2x.png */,
+				F025B6481871517200B1A2B1 /* Default.png */,
+				F025B6491871517200B1A2B1 /* Default@2x.png */,
+				F025B64A1871517200B1A2B1 /* icon0.png */,
+				F025B64B1871517200B1A2B1 /* icon1.png */,
+				F025B64C1871517200B1A2B1 /* icon2.png */,
+				F025B64D1871517200B1A2B1 /* icon3.png */,
+				F025B64E1871517200B1A2B1 /* SectionHeaderView.xib */,
 				F031659A185C6C48001EC383 /* InfoPlist.strings */,
 				F031659D185C6C48001EC383 /* main.m */,
-				F031659F185C6C48001EC383 /* BillManagement-Prefix.pch */,
-				F03165A3185C6C48001EC383 /* Default.png */,
-				F03165A5185C6C49001EC383 /* Default@2x.png */,
-				F03165A7185C6C49001EC383 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,19 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F031659C185C6C48001EC383 /* InfoPlist.strings in Resources */,
-				F03165A4185C6C48001EC383 /* Default.png in Resources */,
-				F03165A6185C6C49001EC383 /* Default@2x.png in Resources */,
-				F03165A8185C6C49001EC383 /* Default-568h@2x.png in Resources */,
 				F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */,
-				F0B3373E185EE28900FC5CE3 /* icon0.png in Resources */,
-				F0B3373F185EE28900FC5CE3 /* icon1.png in Resources */,
-				F0B33740185EE28900FC5CE3 /* icon2.png in Resources */,
-				F0B33741185EE28900FC5CE3 /* icon3.png in Resources */,
 				F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */,
-				F02F93C9186418AB009C889C /* SectionHeaderView.xib in Resources */,
-				F02F93CC18641E32009C889C /* carat-open.png in Resources */,
-				F02F93CD18641E32009C889C /* carat.png in Resources */,
 				F093158B186705720073E0F6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F0445DE7187155EA00A0D2EF /* blackArrow.png in Resources */,
+				F0445DE8187155EA00A0D2EF /* blackArrow@2x.png in Resources */,
+				F0445DE9187155EA00A0D2EF /* blueArrow.png in Resources */,
+				F0445DEA187155EA00A0D2EF /* blueArrow@2x.png in Resources */,
+				F0445DEB187155EA00A0D2EF /* grayArrow.png in Resources */,
+				F0445DEC187155EA00A0D2EF /* grayArrow@2x.png in Resources */,
+				F0445DED187155EA00A0D2EF /* whiteArrow.png in Resources */,
+				F0445DEE187155EA00A0D2EF /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +327,8 @@
 				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
 				F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */,
 				F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */,
+				F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */,
+				F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
