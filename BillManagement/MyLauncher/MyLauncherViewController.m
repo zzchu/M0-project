@@ -119,6 +119,7 @@
     return ([self retrieveFromUserDefaults:@"myLauncherView"] != nil);
 }
 
+//overwrite by outside
 -(void)launcherViewItemSelected:(MyLauncherItem*)item {
     if (![self appControllers] || [self launcherNavigationController]) {
         return;
@@ -126,6 +127,7 @@
     Class viewCtrClass = [[self appControllers] objectForKey:[item controllerStr]];
 	UIViewController *controller = [[viewCtrClass alloc] init];
 	
+
 	[self setLauncherNavigationController:[[UINavigationController alloc] initWithRootViewController:controller]];
 	[[self.launcherNavigationController topViewController] setTitle:item.controllerTitle];
     [self.launcherNavigationController setDelegate:self];
@@ -142,8 +144,8 @@
 									 action:@selector(closeView)]];
 				
 	UIView *viewToLaunch = [[self.launcherNavigationController topViewController] view];
-	
 	[self.parentViewController.view addSubview:[self.launcherNavigationController view]];
+
 	viewToLaunch.alpha = 0;		
 	viewToLaunch.transform = CGAffineTransformMakeScale(0.00001, 0.00001);
 	

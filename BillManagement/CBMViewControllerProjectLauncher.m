@@ -7,9 +7,10 @@
 //
 
 #import "CBMViewControllerProjectLauncher.h"
-#import "CBMViewControllerBillList.h"
 #import "MyLauncherItem.h"
 #import "CustomBadge.h"
+
+
 
 @implementation CBMViewControllerProjectLauncher
 -(void)loadView
@@ -18,9 +19,9 @@
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc]
                                                 initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                 target:self action:@selector(endEditing)] animated:YES];
-    self.title = @"myLauncher";
+    self.title = @"My project";
     
-    [[self appControllers] setObject:[CBMViewControllerBillList class] forKey:@"ItemViewController"];
+    [[self appControllers] setObject:[NSNumber numberWithInteger:0] forKey:@"ItemViewController"];
     
     //Add your view controllers here to be picked up by the launcher; remember to import them above
 	//[[self appControllers] setObject:[MyCustomViewController class] forKey:@"MyCustomViewController"];
@@ -128,6 +129,17 @@
 - (void)endEditing
 {
     [self performSegueWithIdentifier:@"SegueProjectListToChildAdd" sender:self];
+}
+
+-(void)launcherViewItemSelected:(MyLauncherItem*)item {
+    if (![self appControllers]) {
+        return;
+    }
+    NSNumber* targetID = [[self appControllers] objectForKey:[item controllerStr]];
+	
+    
+    [self performSegueWithIdentifier:@"SegueProjectTab" sender:self];
+     
 }
 
 #pragma mark - unwind
