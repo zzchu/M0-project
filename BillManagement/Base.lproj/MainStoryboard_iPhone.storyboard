@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A538g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3tc-vr-fHV">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -286,7 +287,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FLC-FI-G5f" kind="modal" id="dhX-ko-9YV"/>
+                                    <segue destination="dR9-ZV-0P9" kind="modal" id="GOp-83-PZS"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-fv-rQy">
@@ -363,66 +364,46 @@
             </objects>
             <point key="canvasLocation" x="1430" y="-19"/>
         </scene>
-        <!--View Controller Group List - Group List-->
-        <scene sceneID="eK5-Tt-D8v">
+        <!--View Controller Project Launcher-->
+        <scene sceneID="mTd-J6-BfC">
             <objects>
-                <tableViewController id="xNR-Uc-tCL" customClass="CBMViewControllerGroupList" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XiD-VE-SdZ">
+                <viewController id="rpe-Li-mSG" customClass="CBMViewControllerProjectLauncher" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6id-e4-ugL">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GroupListPrototypeCell" id="a0h-RY-JW3">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <connections>
-                                    <segue destination="QQR-UN-qoj" kind="modal" id="sCb-nv-U79"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xNR-Uc-tCL" id="6Ey-Ou-JR9"/>
-                            <outlet property="delegate" destination="xNR-Uc-tCL" id="pQJ-zK-WmA"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Group List" id="jGI-fH-KBm">
-                        <barButtonItem key="leftBarButtonItem" title="Main" id="OlP-v0-Iya">
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hBM-fs-CJd">
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="ZWV-b2-RdT">
                             <connections>
-                                <segue destination="Bfg-Rx-9ot" kind="unwind" unwindAction="backMainEntry:" id="Gwe-SU-j8W"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tQs-Bp-6vi">
-                            <connections>
-                                <segue destination="rYV-AC-6td" kind="push" identifier="SegueAddGroup" id="ohA-p2-rVP"/>
+                                <segue destination="KMb-Yf-Wiv" kind="unwind" unwindAction="backMainEntry:" id="8ge-7h-Loi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="84S-Ih-Pjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Bfg-Rx-9ot" userLabel="Exit" sceneMemberID="exit"/>
+                    <connections>
+                        <segue destination="rYV-AC-6td" kind="push" identifier="SegueProjectListToChildAdd" id="Sex-pM-fbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qei-76-7Vm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KMb-Yf-Wiv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2221" y="-19"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="AZR-Wr-WEe">
+        <scene sceneID="uEV-B0-a00">
             <objects>
-                <navigationController definesPresentationContext="YES" id="FLC-FI-G5f" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p1w-ws-TH8">
+                <navigationController definesPresentationContext="YES" id="dR9-ZV-0P9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgh-1E-QGF">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xNR-Uc-tCL" kind="relationship" relationship="rootViewController" id="3dZ-69-t15"/>
+                        <segue destination="rpe-Li-mSG" kind="relationship" relationship="rootViewController" id="yau-Br-XtE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbx-va-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dw7-f6-PgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824" y="-19"/>
+            <point key="canvasLocation" x="1837" y="-19"/>
         </scene>
         <!--View Controller Add Group-->
         <scene sceneID="EYG-EL-1av">
@@ -566,7 +547,7 @@
                     <navigationItem key="navigationItem" id="6Bk-v8-JFQ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hCJ-Et-xNI">
                             <connections>
-                                <segue destination="ruf-PZ-bRP" kind="unwind" identifier="UnwindSegueCancelToGroupList" unwindAction="backGroupList:" id="hsZ-AS-GUb"/>
+                                <segue destination="ruf-PZ-bRP" kind="unwind" identifier="UnwindSegueCancelToProjectList" unwindAction="backProjectList:" id="hsZ-AS-GUb"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="V5t-Gu-c7a">
@@ -578,7 +559,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tfGroupName" destination="U24-ZN-Z6S" id="Taw-r5-aV8"/>
-                        <segue destination="ruf-PZ-bRP" kind="unwind" identifier="UnwindSegueChildAddToGroupList" unwindAction="backGroupList:" id="KQr-mQ-uBK"/>
+                        <segue destination="ruf-PZ-bRP" kind="unwind" identifier="UnwindSegueChildAddToProjectList" unwindAction="backProjectList:" id="KQr-mQ-uBK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztz-mF-KEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -607,7 +588,7 @@
             <objects>
                 <tableViewController id="KBc-f3-3MD" customClass="CBMViewControllerActionlist" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5zJ-sg-BnP">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -645,7 +626,7 @@
             <objects>
                 <tableViewController id="86a-E7-Tcu" customClass="CBMViewControllerBillList" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9hx-RN-i01">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -734,7 +715,7 @@
             <objects>
                 <tableViewController id="Vy5-od-vqX" customClass="CBMViewControllerMemberList" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WX1-kQ-L9m">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -793,7 +774,7 @@
             <objects>
                 <tableViewController id="mUB-5L-tui" customClass="CBMViewControllerShowBill" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7I9-98-0qT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -873,7 +854,7 @@
             <objects>
                 <tableViewController id="xIv-qL-3du" customClass="CBMViewControllerAddBill" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7vL-zW-Tlp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1008,83 +989,6 @@
     <resources>
         <image name="icon1.png" width="132" height="124"/>
     </resources>
-    <classes>
-        <class className="CBMSectionHeaderView" superclassName="UITableViewHeaderFooterView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMSectionHeaderView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="delegate"/>
-                <relationship kind="outlet" name="disclosureButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerAccountApply" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerAccountApply.h"/>
-        </class>
-        <class className="CBMViewControllerActionlist" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerActionlist.h"/>
-        </class>
-        <class className="CBMViewControllerAddBill" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerAddBill.h"/>
-            <relationships>
-                <relationship kind="action" name="btCaptureImage:"/>
-                <relationship kind="action" name="btSaveBillMember:"/>
-                <relationship kind="outlet" name="ivBillImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tfBillName" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerAddGroup" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerAddGroup.h"/>
-            <relationships>
-                <relationship kind="action" name="btSaveGroupMember:"/>
-                <relationship kind="outlet" name="tfGroupName" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerBillList" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerBillList.h"/>
-            <relationships>
-                <relationship kind="action" name="backBillList:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="outlet" name="sectionHeaderView" candidateClass="CBMSectionHeaderView"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerEntry" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerEntry.h"/>
-            <relationships>
-                <relationship kind="action" name="backMainEntry:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="outlet" name="ivShowLogIn" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ivShowOffLineTask" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerGroupList" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerGroupList.h"/>
-            <relationships>
-                <relationship kind="action" name="backGroupList:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerLogIn" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerLogIn.h"/>
-            <relationships>
-                <relationship kind="action" name="backAccountLogin:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="CBMViewControllerMemberList" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerMemberList.h"/>
-        </class>
-        <class className="CBMViewControllerShowBill" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CBMViewControllerShowBill.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lbBillName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-        <class className="UITableViewHeaderFooterView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UITableViewHeaderFooterView.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

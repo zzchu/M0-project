@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F025B6601871685F00B1A2B1 /* CBMViewControllerProjectLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B65F1871684000B1A2B1 /* CBMViewControllerProjectLauncher.m */; };
+		F025B6611871689600B1A2B1 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B653187167BE00B1A2B1 /* CustomBadge.m */; };
+		F025B662187168A000B1A2B1 /* MyLauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B655187167BE00B1A2B1 /* MyLauncherItem.m */; };
+		F025B663187168A300B1A2B1 /* MyLauncherPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B657187167BE00B1A2B1 /* MyLauncherPageControl.m */; };
+		F025B664187168A600B1A2B1 /* MyLauncherScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B659187167BE00B1A2B1 /* MyLauncherScrollView.m */; };
+		F025B665187168A800B1A2B1 /* MyLauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B65B187167BE00B1A2B1 /* MyLauncherView.m */; };
+		F025B666187168AB00B1A2B1 /* MyLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B65D187167BE00B1A2B1 /* MyLauncherViewController.m */; };
 		F0316592185C6C48001EC383 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316591185C6C48001EC383 /* UIKit.framework */; };
 		F0316594185C6C48001EC383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316593185C6C48001EC383 /* Foundation.framework */; };
 		F0316596185C6C48001EC383 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0316595185C6C48001EC383 /* CoreGraphics.framework */; };
@@ -16,7 +23,6 @@
 		F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03165AC185C6C49001EC383 /* MainStoryboard_iPad.storyboard */; };
 		F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */; };
 		F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */; };
-		F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */; };
 		F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */; };
 		F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */; };
 		F0445DE7187155EA00A0D2EF /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DDF187155EA00A0D2EF /* blackArrow.png */; };
@@ -28,6 +34,14 @@
 		F0445DED187155EA00A0D2EF /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE5187155EA00A0D2EF /* whiteArrow.png */; };
 		F0445DEE187155EA00A0D2EF /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */; };
 		F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */ = {isa = PBXBuildFile; fileRef = F0445E61187158DD00A0D2EF /* CBMViewControllerMemberList.m */; };
+		F0445E6B18716C5E00A0D2EF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6318716C5E00A0D2EF /* close.png */; };
+		F0445E6C18716C5E00A0D2EF /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6418716C5E00A0D2EF /* Icon-iPad.png */; };
+		F0445E6D18716C5E00A0D2EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6518716C5E00A0D2EF /* Icon.png */; };
+		F0445E6E18716C5E00A0D2EF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6618716C5E00A0D2EF /* Icon@2x.png */; };
+		F0445E6F18716C5E00A0D2EF /* itemImage-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6718716C5E00A0D2EF /* itemImage-iPad.png */; };
+		F0445E7018716C5E00A0D2EF /* itemImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6818716C5E00A0D2EF /* itemImage.png */; };
+		F0445E7118716C5E00A0D2EF /* itemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6918716C5E00A0D2EF /* itemImage@2x.png */; };
+		F0445E7218716C5E00A0D2EF /* launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6A18716C5E00A0D2EF /* launcher.png */; };
 		F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A61864084000194E94 /* CBMBillListSectionInfo.m */; };
 		F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A81864084000194E94 /* CBMSectionHeaderView.m */; };
 		F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083485C186D4C4700183D2D /* EGORefreshTableHeaderView.m */; };
@@ -55,6 +69,20 @@
 		F025B64E1871517200B1A2B1 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SectionHeaderView.xib; path = Resource/SectionHeaderView.xib; sourceTree = "<group>"; };
 		F025B64F1871535600B1A2B1 /* BillManagement-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BillManagement-Info.plist"; sourceTree = "<group>"; };
 		F025B6501871535600B1A2B1 /* BillManagement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BillManagement-Prefix.pch"; sourceTree = "<group>"; };
+		F025B652187167BE00B1A2B1 /* CustomBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
+		F025B653187167BE00B1A2B1 /* CustomBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
+		F025B654187167BE00B1A2B1 /* MyLauncherItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLauncherItem.h; sourceTree = "<group>"; };
+		F025B655187167BE00B1A2B1 /* MyLauncherItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLauncherItem.m; sourceTree = "<group>"; };
+		F025B656187167BE00B1A2B1 /* MyLauncherPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLauncherPageControl.h; sourceTree = "<group>"; };
+		F025B657187167BE00B1A2B1 /* MyLauncherPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLauncherPageControl.m; sourceTree = "<group>"; };
+		F025B658187167BE00B1A2B1 /* MyLauncherScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLauncherScrollView.h; sourceTree = "<group>"; };
+		F025B659187167BE00B1A2B1 /* MyLauncherScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLauncherScrollView.m; sourceTree = "<group>"; };
+		F025B65A187167BE00B1A2B1 /* MyLauncherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLauncherView.h; sourceTree = "<group>"; };
+		F025B65B187167BE00B1A2B1 /* MyLauncherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLauncherView.m; sourceTree = "<group>"; };
+		F025B65C187167BE00B1A2B1 /* MyLauncherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLauncherViewController.h; sourceTree = "<group>"; };
+		F025B65D187167BE00B1A2B1 /* MyLauncherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLauncherViewController.m; sourceTree = "<group>"; };
+		F025B65E1871684000B1A2B1 /* CBMViewControllerProjectLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerProjectLauncher.h; sourceTree = "<group>"; };
+		F025B65F1871684000B1A2B1 /* CBMViewControllerProjectLauncher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerProjectLauncher.m; sourceTree = "<group>"; };
 		F031658D185C6C48001EC383 /* BillManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0316591185C6C48001EC383 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0316593185C6C48001EC383 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,8 +95,6 @@
 		F03165B0185C6C49001EC383 /* CBMViewControllerEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerEntry.m; sourceTree = "<group>"; };
 		F03165C6185CA15A001EC383 /* CBMViewControllerLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerLogIn.h; sourceTree = "<group>"; };
 		F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerLogIn.m; sourceTree = "<group>"; };
-		F03165C9185CA205001EC383 /* CBMViewControllerGroupList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerGroupList.h; sourceTree = "<group>"; };
-		F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerGroupList.m; sourceTree = "<group>"; };
 		F03165CC185CA237001EC383 /* CBMViewControllerBillList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerBillList.h; sourceTree = "<group>"; };
 		F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerBillList.m; sourceTree = "<group>"; };
 		F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerShowBill.h; sourceTree = "<group>"; };
@@ -83,6 +109,14 @@
 		F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whiteArrow@2x.png"; path = "Resource/whiteArrow@2x.png"; sourceTree = "<group>"; };
 		F0445E60187158DD00A0D2EF /* CBMViewControllerMemberList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerMemberList.h; sourceTree = "<group>"; };
 		F0445E61187158DD00A0D2EF /* CBMViewControllerMemberList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerMemberList.m; sourceTree = "<group>"; };
+		F0445E6318716C5E00A0D2EF /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = Resource/close.png; sourceTree = "<group>"; };
+		F0445E6418716C5E00A0D2EF /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-iPad.png"; path = "Resource/Icon-iPad.png"; sourceTree = "<group>"; };
+		F0445E6518716C5E00A0D2EF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resource/Icon.png; sourceTree = "<group>"; };
+		F0445E6618716C5E00A0D2EF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resource/Icon@2x.png"; sourceTree = "<group>"; };
+		F0445E6718716C5E00A0D2EF /* itemImage-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemImage-iPad.png"; path = "Resource/itemImage-iPad.png"; sourceTree = "<group>"; };
+		F0445E6818716C5E00A0D2EF /* itemImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemImage.png; path = Resource/itemImage.png; sourceTree = "<group>"; };
+		F0445E6918716C5E00A0D2EF /* itemImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemImage@2x.png"; path = "Resource/itemImage@2x.png"; sourceTree = "<group>"; };
+		F0445E6A18716C5E00A0D2EF /* launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launcher.png; path = Resource/launcher.png; sourceTree = "<group>"; };
 		F04505A51864084000194E94 /* CBMBillListSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMBillListSectionInfo.h; sourceTree = "<group>"; };
 		F04505A61864084000194E94 /* CBMBillListSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMBillListSectionInfo.m; sourceTree = "<group>"; };
 		F04505A71864084000194E94 /* CBMSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMSectionHeaderView.h; sourceTree = "<group>"; };
@@ -128,6 +162,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F025B651187167BE00B1A2B1 /* MyLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				F025B652187167BE00B1A2B1 /* CustomBadge.h */,
+				F025B653187167BE00B1A2B1 /* CustomBadge.m */,
+				F025B654187167BE00B1A2B1 /* MyLauncherItem.h */,
+				F025B655187167BE00B1A2B1 /* MyLauncherItem.m */,
+				F025B656187167BE00B1A2B1 /* MyLauncherPageControl.h */,
+				F025B657187167BE00B1A2B1 /* MyLauncherPageControl.m */,
+				F025B658187167BE00B1A2B1 /* MyLauncherScrollView.h */,
+				F025B659187167BE00B1A2B1 /* MyLauncherScrollView.m */,
+				F025B65A187167BE00B1A2B1 /* MyLauncherView.h */,
+				F025B65B187167BE00B1A2B1 /* MyLauncherView.m */,
+				F025B65C187167BE00B1A2B1 /* MyLauncherViewController.h */,
+				F025B65D187167BE00B1A2B1 /* MyLauncherViewController.m */,
+			);
+			path = MyLauncher;
+			sourceTree = "<group>";
+		};
 		F0316582185C6C48001EC383 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +212,7 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F025B651187167BE00B1A2B1 /* MyLauncher */,
 				F083485A186D4C4700183D2D /* RefreshTableHeaderView */,
 				F04505A71864084000194E94 /* CBMSectionHeaderView.h */,
 				F04505A81864084000194E94 /* CBMSectionHeaderView.m */,
@@ -177,8 +231,8 @@
 				F03165C7185CA15A001EC383 /* CBMViewControllerLogIn.m */,
 				F0B33729185ED66700FC5CE3 /* CBMViewControllerAccountApply.h */,
 				F0B3372A185ED66700FC5CE3 /* CBMViewControllerAccountApply.m */,
-				F03165C9185CA205001EC383 /* CBMViewControllerGroupList.h */,
-				F03165CA185CA205001EC383 /* CBMViewControllerGroupList.m */,
+				F025B65E1871684000B1A2B1 /* CBMViewControllerProjectLauncher.h */,
+				F025B65F1871684000B1A2B1 /* CBMViewControllerProjectLauncher.m */,
 				F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */,
 				F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */,
 				F03165CC185CA237001EC383 /* CBMViewControllerBillList.h */,
@@ -201,6 +255,14 @@
 		F0316598185C6C48001EC383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0445E6318716C5E00A0D2EF /* close.png */,
+				F0445E6418716C5E00A0D2EF /* Icon-iPad.png */,
+				F0445E6518716C5E00A0D2EF /* Icon.png */,
+				F0445E6618716C5E00A0D2EF /* Icon@2x.png */,
+				F0445E6718716C5E00A0D2EF /* itemImage-iPad.png */,
+				F0445E6818716C5E00A0D2EF /* itemImage.png */,
+				F0445E6918716C5E00A0D2EF /* itemImage@2x.png */,
+				F0445E6A18716C5E00A0D2EF /* launcher.png */,
 				F0445DDF187155EA00A0D2EF /* blackArrow.png */,
 				F0445DE0187155EA00A0D2EF /* blackArrow@2x.png */,
 				F0445DE1187155EA00A0D2EF /* blueArrow.png */,
@@ -302,6 +364,14 @@
 				F0445DEC187155EA00A0D2EF /* grayArrow@2x.png in Resources */,
 				F0445DED187155EA00A0D2EF /* whiteArrow.png in Resources */,
 				F0445DEE187155EA00A0D2EF /* whiteArrow@2x.png in Resources */,
+				F0445E6B18716C5E00A0D2EF /* close.png in Resources */,
+				F0445E6C18716C5E00A0D2EF /* Icon-iPad.png in Resources */,
+				F0445E6D18716C5E00A0D2EF /* Icon.png in Resources */,
+				F0445E6E18716C5E00A0D2EF /* Icon@2x.png in Resources */,
+				F0445E6F18716C5E00A0D2EF /* itemImage-iPad.png in Resources */,
+				F0445E7018716C5E00A0D2EF /* itemImage.png in Resources */,
+				F0445E7118716C5E00A0D2EF /* itemImage@2x.png in Resources */,
+				F0445E7218716C5E00A0D2EF /* launcher.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,9 +387,13 @@
 				F03165A2185C6C48001EC383 /* CBMAppDelegate.m in Sources */,
 				F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */,
 				F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */,
+				F025B664187168A600B1A2B1 /* MyLauncherScrollView.m in Sources */,
+				F025B665187168A800B1A2B1 /* MyLauncherView.m in Sources */,
+				F025B663187168A300B1A2B1 /* MyLauncherPageControl.m in Sources */,
+				F025B6601871685F00B1A2B1 /* CBMViewControllerProjectLauncher.m in Sources */,
 				F03165C8185CA15A001EC383 /* CBMViewControllerLogIn.m in Sources */,
-				F03165CB185CA205001EC383 /* CBMViewControllerGroupList.m in Sources */,
 				F03165CE185CA237001EC383 /* CBMViewControllerBillList.m in Sources */,
+				F025B6611871689600B1A2B1 /* CustomBadge.m in Sources */,
 				F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */,
 				F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */,
 				F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */,
@@ -327,7 +401,9 @@
 				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
 				F03FD00D185F344C002E7E28 /* CBMViewControllerShowBill.m in Sources */,
 				F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */,
+				F025B666187168AB00B1A2B1 /* MyLauncherViewController.m in Sources */,
 				F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */,
+				F025B662187168A000B1A2B1 /* MyLauncherItem.m in Sources */,
 				F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

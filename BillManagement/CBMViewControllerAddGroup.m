@@ -96,7 +96,7 @@
     if (self.tfGroupName.text.length > 0 ) {
         self.dataModelGroupMember = [[CBMDataModelGroupMember alloc] init];
         self.dataModelGroupMember.sGroupName = self.tfGroupName.text;
-        [self performSegueWithIdentifier:@"UnwindSegueChildAddToGroupList" sender:self];
+        [self performSegueWithIdentifier:@"UnwindSegueChildAddToProjectList" sender:self];
     }
     else
     {
