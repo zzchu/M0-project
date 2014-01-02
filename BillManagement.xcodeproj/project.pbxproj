@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F012D1B818754BE300440129 /* CBMSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F012D1B71875445B00440129 /* CBMSectionInfo.m */; };
 		F025B6601871685F00B1A2B1 /* CBMViewControllerProjectLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B65F1871684000B1A2B1 /* CBMViewControllerProjectLauncher.m */; };
 		F025B6611871689600B1A2B1 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B653187167BE00B1A2B1 /* CustomBadge.m */; };
 		F025B662187168A000B1A2B1 /* MyLauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F025B655187167BE00B1A2B1 /* MyLauncherItem.m */; };
@@ -42,10 +43,11 @@
 		F0445E7018716C5E00A0D2EF /* itemImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6818716C5E00A0D2EF /* itemImage.png */; };
 		F0445E7118716C5E00A0D2EF /* itemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6918716C5E00A0D2EF /* itemImage@2x.png */; };
 		F0445E7218716C5E00A0D2EF /* launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445E6A18716C5E00A0D2EF /* launcher.png */; };
-		F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A61864084000194E94 /* CBMBillListSectionInfo.m */; };
-		F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04505A81864084000194E94 /* CBMSectionHeaderView.m */; };
 		F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083485C186D4C4700183D2D /* EGORefreshTableHeaderView.m */; };
 		F051E05A187145CC00D5FE7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F051E059187145CC00D5FE7A /* QuartzCore.framework */; };
+		F05AC39F1875048B00E42F13 /* CBMSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05AC39D1875048B00E42F13 /* CBMSectionHeaderView.m */; };
+		F05AC3A2187512C900E42F13 /* CBMCellBillList.m in Sources */ = {isa = PBXBuildFile; fileRef = F05AC3A1187512C900E42F13 /* CBMCellBillList.m */; };
+		F05AC3A318753A2800E42F13 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F025B64E1871517200B1A2B1 /* SectionHeaderView.xib */; };
 		F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */; };
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
@@ -57,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F012D1B61875445B00440129 /* CBMSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMSectionInfo.h; sourceTree = "<group>"; };
+		F012D1B71875445B00440129 /* CBMSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMSectionInfo.m; sourceTree = "<group>"; };
 		F025B6451871517200B1A2B1 /* carat-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carat-open.png"; path = "Resource/carat-open.png"; sourceTree = "<group>"; };
 		F025B6461871517200B1A2B1 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carat.png; path = Resource/carat.png; sourceTree = "<group>"; };
 		F025B6471871517200B1A2B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resource/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -117,11 +121,11 @@
 		F0445E6818716C5E00A0D2EF /* itemImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemImage.png; path = Resource/itemImage.png; sourceTree = "<group>"; };
 		F0445E6918716C5E00A0D2EF /* itemImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemImage@2x.png"; path = "Resource/itemImage@2x.png"; sourceTree = "<group>"; };
 		F0445E6A18716C5E00A0D2EF /* launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launcher.png; path = Resource/launcher.png; sourceTree = "<group>"; };
-		F04505A51864084000194E94 /* CBMBillListSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMBillListSectionInfo.h; sourceTree = "<group>"; };
-		F04505A61864084000194E94 /* CBMBillListSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMBillListSectionInfo.m; sourceTree = "<group>"; };
-		F04505A71864084000194E94 /* CBMSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMSectionHeaderView.h; sourceTree = "<group>"; };
-		F04505A81864084000194E94 /* CBMSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMSectionHeaderView.m; sourceTree = "<group>"; };
 		F051E059187145CC00D5FE7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F05AC39C1875048B00E42F13 /* CBMSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMSectionHeaderView.h; sourceTree = "<group>"; };
+		F05AC39D1875048B00E42F13 /* CBMSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMSectionHeaderView.m; sourceTree = "<group>"; };
+		F05AC3A0187512C900E42F13 /* CBMCellBillList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMCellBillList.h; sourceTree = "<group>"; };
+		F05AC3A1187512C900E42F13 /* CBMCellBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMCellBillList.m; sourceTree = "<group>"; };
 		F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddGroup.h; sourceTree = "<group>"; };
 		F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddGroup.m; sourceTree = "<group>"; };
 		F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMDataModelGroupMember.h; sourceTree = "<group>"; };
@@ -212,10 +216,9 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F05AC3991875048B00E42F13 /* TableViewCustomize */,
 				F025B651187167BE00B1A2B1 /* MyLauncher */,
 				F083485A186D4C4700183D2D /* RefreshTableHeaderView */,
-				F04505A71864084000194E94 /* CBMSectionHeaderView.h */,
-				F04505A81864084000194E94 /* CBMSectionHeaderView.m */,
 				F0B3374A185EF37700FC5CE3 /* Localizable.strings */,
 				F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */,
 				F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */,
@@ -239,8 +242,6 @@
 				F03165CD185CA237001EC383 /* CBMViewControllerBillList.m */,
 				F07A731F185DE27100183A43 /* CBMViewControllerAddBill.h */,
 				F07A7320185DE27100183A43 /* CBMViewControllerAddBill.m */,
-				F04505A51864084000194E94 /* CBMBillListSectionInfo.h */,
-				F04505A61864084000194E94 /* CBMBillListSectionInfo.m */,
 				F03FD00B185F344C002E7E28 /* CBMViewControllerShowBill.h */,
 				F03FD00C185F344C002E7E28 /* CBMViewControllerShowBill.m */,
 				F093158E186709380073E0F6 /* CBMViewControllerActionlist.h */,
@@ -287,6 +288,19 @@
 				F031659D185C6C48001EC383 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F05AC3991875048B00E42F13 /* TableViewCustomize */ = {
+			isa = PBXGroup;
+			children = (
+				F012D1B61875445B00440129 /* CBMSectionInfo.h */,
+				F012D1B71875445B00440129 /* CBMSectionInfo.m */,
+				F05AC39C1875048B00E42F13 /* CBMSectionHeaderView.h */,
+				F05AC39D1875048B00E42F13 /* CBMSectionHeaderView.m */,
+				F05AC3A0187512C900E42F13 /* CBMCellBillList.h */,
+				F05AC3A1187512C900E42F13 /* CBMCellBillList.m */,
+			);
+			path = TableViewCustomize;
 			sourceTree = "<group>";
 		};
 		F083485A186D4C4700183D2D /* RefreshTableHeaderView */ = {
@@ -372,6 +386,7 @@
 				F0445E7018716C5E00A0D2EF /* itemImage.png in Resources */,
 				F0445E7118716C5E00A0D2EF /* itemImage@2x.png in Resources */,
 				F0445E7218716C5E00A0D2EF /* launcher.png in Resources */,
+				F05AC3A318753A2800E42F13 /* SectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,11 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04505AA18641BAA00194E94 /* CBMSectionHeaderView.m in Sources */,
 				F031659E185C6C48001EC383 /* main.m in Sources */,
 				F03165A2185C6C48001EC383 /* CBMAppDelegate.m in Sources */,
 				F03165B1185C6C49001EC383 /* CBMViewControllerEntry.m in Sources */,
-				F04505A918641B9900194E94 /* CBMBillListSectionInfo.m in Sources */,
 				F025B664187168A600B1A2B1 /* MyLauncherScrollView.m in Sources */,
 				F025B665187168A800B1A2B1 /* MyLauncherView.m in Sources */,
 				F025B663187168A300B1A2B1 /* MyLauncherPageControl.m in Sources */,
@@ -405,6 +418,9 @@
 				F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */,
 				F025B662187168A000B1A2B1 /* MyLauncherItem.m in Sources */,
 				F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */,
+				F05AC39F1875048B00E42F13 /* CBMSectionHeaderView.m in Sources */,
+				F012D1B818754BE300440129 /* CBMSectionInfo.m in Sources */,
+				F05AC3A2187512C900E42F13 /* CBMCellBillList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

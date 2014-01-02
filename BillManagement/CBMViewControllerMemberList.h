@@ -10,4 +10,7 @@
 
 @interface CBMViewControllerMemberList : UITableViewController
 
+//Get from server, include section info and bill info
+@property (retain) NSMutableArray *arrayBillList;
+
 @end

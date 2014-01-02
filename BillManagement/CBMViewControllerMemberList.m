@@ -5,10 +5,15 @@
 //  Created by zhaozheng on 13-12-30.
 //  Copyright (c) 2013年 zhaozheng chu. All rights reserved.
 //
-
+#import "CBMSectionInfo.h"
 #import "CBMViewControllerMemberList.h"
+#import "CBMSectionHeaderView.h"
+
+static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 @interface CBMViewControllerMemberList ()
+
+@property (nonatomic) NSMutableArray *sectionInfoArray;
 
 @end
 
@@ -27,6 +32,8 @@
 {
     [super viewDidLoad];
 
+    [self initSectionInfoArray];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,26 +51,51 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [self.sectionInfoArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
+	NSInteger numStoriesInSection = [sectionInfo.cellArray count];
+    
+    return sectionInfo.open ? numStoriesInSection : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"MemberListCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    //CBMDataModelBillMember *bill = (CBMDataModelBillMember *)[[(self.sectionInfoArray)[indexPath.section] cellArray] objectAtIndex:indexPath.row];
+    //cell.textLabel.text = bill.sBillName;
     return cell;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    CBMSectionHeaderView *sectionHeaderView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:SectionHeaderViewIdentifier];
+    
+    CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
+    sectionInfo.headerView = sectionHeaderView;
+    
+    sectionHeaderView.titleLabel.text = sectionInfo.sSectionName;
+    sectionHeaderView.section = section;
+    sectionHeaderView.delegate = self;
+    
+    return sectionHeaderView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
+    return [[sectionInfo objectInRowHeightsAtIndex:indexPath.row] floatValue];
+    // Alternatively, return rowHeight.
 }
 
 /*
@@ -116,6 +148,12 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+
+- (void)initSectionInfoArray
+{
+    
 }
 
 @end

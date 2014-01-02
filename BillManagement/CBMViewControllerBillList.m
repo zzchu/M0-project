@@ -7,7 +7,8 @@
 //
 
 #import "CBMViewControllerBillList.h"
-#import "CBMBillListSectionInfo.h"
+#import "CBMSectionInfo.h"
+#import "CBMCellBillList.h"
 static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 @interface CBMViewControllerBillList ()
@@ -27,7 +28,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 @property (nonatomic) BOOL reloading;
 @end
 
-#define DEFAULT_ROW_HEIGHT 48
+#define DEFAULT_ROW_HEIGHT 92
 #define HEADER_HEIGHT 48
 
 @implementation CBMViewControllerBillList
@@ -83,20 +84,20 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	CBMBillListSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
-	NSInteger numStoriesInSection = [sectionInfo.billArray count];
+	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
+	NSInteger numStoriesInSection = [sectionInfo.cellArray count];
     
     return sectionInfo.open ? numStoriesInSection : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"BillListPrototypeCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"BillListCellApproved";
+    CBMCellBillList *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    CBMDataModelBillMember *bill = (CBMDataModelBillMember *)[[(self.sectionInfoArray)[indexPath.section] billArray] objectAtIndex:indexPath.row];
-    cell.textLabel.text = bill.sBillName;
+    CBMDataModelBillMember *bill = (CBMDataModelBillMember *)[[(self.sectionInfoArray)[indexPath.section] cellArray] objectAtIndex:indexPath.row];
+    //cell.textLabel.text = bill.sBillName;
     return cell;
 }
 
@@ -104,7 +105,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
     
     CBMSectionHeaderView *sectionHeaderView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:SectionHeaderViewIdentifier];
     
-    CBMBillListSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
+    CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
     sectionInfo.headerView = sectionHeaderView;
     
     sectionHeaderView.titleLabel.text = sectionInfo.sSectionName;
@@ -116,7 +117,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	CBMBillListSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
+	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
     return [[sectionInfo objectInRowHeightsAtIndex:indexPath.row] floatValue];
     // Alternatively, return rowHeight.
 }
@@ -178,14 +179,14 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 - (void)sectionHeaderView:(CBMSectionHeaderView *)sectionHeaderView sectionOpened:(NSInteger)sectionOpened {
     
-	CBMBillListSectionInfo *sectionInfo = (self.sectionInfoArray)[sectionOpened];
+	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[sectionOpened];
     
 	sectionInfo.open = YES;
     
     /*
      Create an array containing the index paths of the rows to insert: These correspond to the rows for each quotation in the current section.
      */
-    NSInteger countOfRowsToInsert = [sectionInfo.billArray count];
+    NSInteger countOfRowsToInsert = [sectionInfo.cellArray count];
     NSMutableArray *indexPathsToInsert = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < countOfRowsToInsert; i++) {
         [indexPathsToInsert addObject:[NSIndexPath indexPathForRow:i inSection:sectionOpened]];
@@ -199,10 +200,10 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
     NSInteger previousOpenSectionIndex = self.openSectionIndex;
     if (previousOpenSectionIndex != NSNotFound) {
         
-		CBMBillListSectionInfo *previousOpenSection = (self.sectionInfoArray)[previousOpenSectionIndex];
+		CBMSectionInfo *previousOpenSection = (self.sectionInfoArray)[previousOpenSectionIndex];
         previousOpenSection.open = NO;
         [previousOpenSection.headerView toggleOpenWithUserAction:NO];
-        NSInteger countOfRowsToDelete = [previousOpenSection.billArray count];
+        NSInteger countOfRowsToDelete = [previousOpenSection.cellArray count];
         for (NSInteger i = 0; i < countOfRowsToDelete; i++) {
             [indexPathsToDelete addObject:[NSIndexPath indexPathForRow:i inSection:previousOpenSectionIndex]];
         }
@@ -234,7 +235,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
     /*
      Create an array of the index paths of the rows in the section that was closed, then delete those rows from the table view.
      */
-	CBMBillListSectionInfo *sectionInfo = (self.sectionInfoArray)[sectionClosed];
+	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[sectionClosed];
     
     sectionInfo.open = NO;
     NSInteger countOfRowsToDelete = [self.tableView numberOfRowsInSection:sectionClosed];
@@ -381,15 +382,15 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
         
         NSMutableArray *infoArray = [[NSMutableArray alloc] init];
         
-		for (NSMutableArray *billArray in self.arrayBillList) {
+		for (NSMutableArray *cellArray in self.arrayBillList) {
             
-			CBMBillListSectionInfo *billListSectionInfo = [[CBMBillListSectionInfo alloc] init];
-			billListSectionInfo.billArray = billArray;
+			CBMSectionInfo *billListSectionInfo = [[CBMSectionInfo alloc] init];
+			billListSectionInfo.cellArray = cellArray;
 			billListSectionInfo.open = NO;
             billListSectionInfo.sSectionName = @"section name";
             
             NSNumber *defaultRowHeight = @(DEFAULT_ROW_HEIGHT);
-			NSInteger countOfRows = [billListSectionInfo.billArray count];
+			NSInteger countOfRows = [billListSectionInfo.cellArray count];
 			for (NSInteger i = 0; i < countOfRows; i++) {
 				[billListSectionInfo insertObject:defaultRowHeight inRowHeightsAtIndex:i];
 			}
@@ -401,14 +402,14 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 #else
         NSMutableArray *infoArray = [[NSMutableArray alloc] init];
         
-		for (NSMutableArray *billArray in self.arrayBillList) {
+		for (NSMutableArray *cellArray in self.arrayBillList) {
             
-			CBMBillListSectionInfo *billListSectionInfo = [[CBMBillListSectionInfo alloc] init];
-			billListSectionInfo.billArray = billArray;
+			CBMSectionInfo *billListSectionInfo = [[CBMSectionInfo alloc] init];
+			billListSectionInfo.cellArray = cellArray;
 			billListSectionInfo.open = NO;
             
             NSNumber *defaultRowHeight = @(DEFAULT_ROW_HEIGHT);
-			NSInteger countOfRows = [billListSectionInfo.billArray count];
+			NSInteger countOfRows = [billListSectionInfo.cellArray count];
 			for (NSInteger i = 0; i < countOfRows; i++) {
 				[billListSectionInfo insertObject:defaultRowHeight inRowHeightsAtIndex:i];
 			}
