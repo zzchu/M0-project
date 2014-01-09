@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CBMSectionHeaderView.h"
 
-@interface CBMViewControllerActionlist : UITableViewController
+@interface CBMViewControllerActionlist : UITableViewController <SectionHeaderViewDelegate>
+
+@property (retain) NSMutableArray *arrayBillList;
 
 @end

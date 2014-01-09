@@ -10,7 +10,83 @@
 #import "MyLauncherItem.h"
 #import "CustomBadge.h"
 
+@interface MyLauncherView (AddNewItemCategory)
+-(void)launcherViewAddNewItem:(MyLauncherItem*)item;
+@end
 
+@implementation MyLauncherView (AddNewItemCategory)
+
+-(void)launcherViewAddNewItem:(MyLauncherItem*)newItem
+{
+    BOOL isFlag = NO;
+    
+    //Add to exist page
+    for (NSMutableArray* page in self.pages) {
+        if ([page count] < [self maxItemsPerPage]) {
+            [page addObject:newItem];
+            isFlag = YES;
+            break;
+        }
+    }
+    
+    if (isFlag != YES) {
+        //Add the new page
+        if ([self.pages count] < [self maxPages]) {
+            NSMutableArray* page = [NSMutableArray arrayWithObject:newItem];
+            [self.pages addObject:page];
+        }
+    }
+    
+
+	CGFloat pageWidth = self.pagesScrollView.frame.size.width;
+    
+	for (NSMutableArray *page in self.pages)
+	{
+        CGFloat x = minX;
+        CGFloat y = minY;
+		int itemsCount = 1;
+		for (MyLauncherItem *item in page)
+		{
+
+			if (newItem == item) 
+			{
+				item.frame = CGRectMake(x, y, itemWidth, itemHeight);
+				item.delegate = self;
+				[item layoutItem];
+				[item addTarget:self action:@selector(itemTouchedUpInside:) forControlEvents:UIControlEventTouchUpInside];
+				[item addTarget:self action:@selector(itemTouchedUpOutside:) forControlEvents:UIControlEventTouchUpOutside];
+				[item addTarget:self action:@selector(itemTouchedDown:) forControlEvents:UIControlEventTouchDown];
+                [item addTarget:self action:@selector(itemTouchCancelled:) forControlEvents:UIControlEventTouchCancel];
+				[self.pagesScrollView addSubview:item];
+                item.closeButton.hidden = editing ? NO : YES;
+			}
+
+			x += itemWidth + paddingX;
+			
+			if ( itemsCount % columnCount == 0)
+			{
+				y += itemHeight + paddingY;
+				x = minX;
+			}
+			
+			itemsCount++;
+		}
+		
+		minX += pageWidth;
+	}
+	
+	self.pageControl.numberOfPages = self.pages.count;
+	self.pagesScrollView.contentSize = CGSizeMake(self.pagesScrollView.frame.size.width * self.pages.count,
+                                                  rowCount * itemHeight);
+    
+}
+@end
+
+@interface CBMViewControllerProjectLauncher ()
+
+@property (retain, nonatomic)NSMutableArray* arrayPages;
+
+@end
 
 @implementation CBMViewControllerProjectLauncher
 -(void)loadView
@@ -26,75 +102,78 @@
     //Add your view controllers here to be picked up by the launcher; remember to import them above
 	//[[self appControllers] setObject:[MyCustomViewController class] forKey:@"MyCustomViewController"];
 	//[[self appControllers] setObject:[MyOtherCustomViewController class] forKey:@"MyOtherCustomViewController"];
-	
+
+    
 	if(![self hasSavedLauncherItems])
 	{
-		[self.launcherView setPages:[NSMutableArray arrayWithObjects:
-                                     [NSMutableArray arrayWithObjects:
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 1"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 1 View"
-                                                                  deletable:NO],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 2"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 2 View"
-                                                                  deletable:NO],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 3"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 3 View"
-                                                                  deletable:YES],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 4"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 4 View"
-                                                                  deletable:NO],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 5"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 5 View"
-                                                                  deletable:YES],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 6"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 6 View"
-                                                                  deletable:NO],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 7"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 7 View"
-                                                                  deletable:NO],
-                                      nil],
-                                     [NSMutableArray arrayWithObjects:
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 8"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 8 View"
-                                                                  deletable:NO],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 9"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 9 View"
-                                                                  deletable:YES],
-                                      [[MyLauncherItem alloc] initWithTitle:@"Item 10"
-                                                                iPhoneImage:@"itemImage"
-                                                                  iPadImage:@"itemImage-iPad"
-                                                                     target:@"ItemViewController"
-                                                                targetTitle:@"Item 10 View"
-                                                                  deletable:NO],
-                                      nil],
-                                     nil]];
+        self.arrayPages = [NSMutableArray arrayWithObjects:
+                           [NSMutableArray arrayWithObjects:
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 1"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 1 View"
+                                                        deletable:NO],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 2"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 2 View"
+                                                        deletable:NO],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 3"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 3 View"
+                                                        deletable:YES],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 4"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 4 View"
+                                                        deletable:NO],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 5"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 5 View"
+                                                        deletable:YES],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 6"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 6 View"
+                                                        deletable:NO],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 7"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 7 View"
+                                                        deletable:NO],
+                            nil],
+                           [NSMutableArray arrayWithObjects:
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 8"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 8 View"
+                                                        deletable:NO],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 9"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 9 View"
+                                                        deletable:YES],
+                            [[MyLauncherItem alloc] initWithTitle:@"Item 10"
+                                                      iPhoneImage:@"itemImage"
+                                                        iPadImage:@"itemImage-iPad"
+                                                           target:@"ItemViewController"
+                                                      targetTitle:@"Item 10 View"
+                                                        deletable:NO],
+                            nil],
+                           nil];
+        
+		[self.launcherView setPages:self.arrayPages numberOfImmovableItems:1];
         
         // Set number of immovable items below; only set it when you are setting the pages as the
         // user may still be able to delete these items and setting this then will cause movable
@@ -150,7 +229,15 @@
     }
     else if ([segue.identifier isEqualToString:@"UnwindSegueChildAddToProjectList"] == YES)
     {
+        //Generate the new item
+        MyLauncherItem* newItem = [[MyLauncherItem alloc] initWithTitle:@"New Item"
+                                                            iPhoneImage:@"itemImage"
+                                                              iPadImage:@"itemImage-iPad"
+                                                                 target:@"ItemViewController"
+                                                            targetTitle:@"Item 10 View"
+                                                              deletable:YES];
 
+        [self.launcherView launcherViewAddNewItem:newItem];
     }
     
 }

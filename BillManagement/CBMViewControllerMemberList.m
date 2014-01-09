@@ -7,8 +7,8 @@
 //
 #import "CBMSectionInfo.h"
 #import "CBMViewControllerMemberList.h"
-#import "CBMSectionHeaderView.h"
-
+#import "CBMNormalSectionHeaderView.h"
+#import "CBMCellMemberList.h"
 static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 
 @interface CBMViewControllerMemberList ()
@@ -31,7 +31,9 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.tableView.sectionHeaderHeight = 48;
+    UINib *sectionHeaderNib = [UINib nibWithNibName:@"NormalSectionHeaderView" bundle:nil];
+    [self.tableView registerNib:sectionHeaderNib forHeaderFooterViewReuseIdentifier:SectionHeaderViewIdentifier];
     [self initSectionInfoArray];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -53,7 +55,8 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 {
 //#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return [self.sectionInfoArray count];
+    //return [self.sectionInfoArray count];
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -61,41 +64,44 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
-	NSInteger numStoriesInSection = [sectionInfo.cellArray count];
-    
-    return sectionInfo.open ? numStoriesInSection : 0;
+    //return [sectionInfo.cellArray count];
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"MemberListCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    CBMCellMemberList *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     //CBMDataModelBillMember *bill = (CBMDataModelBillMember *)[[(self.sectionInfoArray)[indexPath.section] cellArray] objectAtIndex:indexPath.row];
-    //cell.textLabel.text = bill.sBillName;
+    cell.lbTitle.text = @"zzchu";
+    cell.lbRightDetail.text = @"creator";
+
     return cell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    CBMSectionHeaderView *sectionHeaderView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:SectionHeaderViewIdentifier];
+    CBMNormalSectionHeaderView *sectionHeaderView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:SectionHeaderViewIdentifier];
     
     CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[section];
-    sectionInfo.headerView = sectionHeaderView;
+    //sectionInfo.headerView = sectionHeaderView;
     
-    sectionHeaderView.titleLabel.text = sectionInfo.sSectionName;
-    sectionHeaderView.section = section;
-    sectionHeaderView.delegate = self;
-    
+    //sectionHeaderView.lbTitle.text = sectionInfo.sSectionName;
+    sectionHeaderView.lbTitle.text = @"role";
+    sectionHeaderView.lbRightDetail.text = @"10";
+    sectionHeaderView.intSection = section;
+
     return sectionHeaderView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
-    return [[sectionInfo objectInRowHeightsAtIndex:indexPath.row] floatValue];
+	//CBMSectionInfo *sectionInfo = (self.sectionInfoArray)[indexPath.section];
+    //return [[sectionInfo objectInRowHeightsAtIndex:indexPath.row] floatValue];
     // Alternatively, return rowHeight.
+    return 48;
 }
 
 /*
