@@ -61,6 +61,14 @@
 		F05AC3BB1877E14F00E42F13 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE5187155EA00A0D2EF /* whiteArrow.png */; };
 		F05AC3BC1877E14F00E42F13 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0445DE6187155EA00A0D2EF /* whiteArrow@2x.png */; };
 		F05AC3C01877F6EA00E42F13 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05AC3BF1877F6EA00E42F13 /* SWTableViewCell.m */; };
+		F0713EA71883B80900AA61A0 /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0713EA21883B7F600AA61A0 /* AMBlurView.m */; };
+		F0713EA81883B80B00AA61A0 /* MYBlurIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0713EA41883B7F600AA61A0 /* MYBlurIntroductionView.m */; };
+		F0713EA91883B80E00AA61A0 /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0713EA61883B7F600AA61A0 /* MYIntroductionPanel.m */; };
+		F0713EB21883BE2000AA61A0 /* ForkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0713EAD1883BE2000AA61A0 /* ForkImage.png */; };
+		F0713EB31883BE2000AA61A0 /* HeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0713EAE1883BE2000AA61A0 /* HeaderImage.png */; };
+		F0713EB41883BE2000AA61A0 /* TestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0713EAF1883BE2000AA61A0 /* TestHeader.xib */; };
+		F0713EB51883BE2000AA61A0 /* TestPanel3.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0713EB01883BE2000AA61A0 /* TestPanel3.xib */; };
+		F0713EB61883BE2000AA61A0 /* Toronto, ON.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0713EB11883BE2000AA61A0 /* Toronto, ON.jpg */; };
 		F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */; };
 		F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731A185DAD3A00183A43 /* CBMDataModelGroupMember.m */; };
 		F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F07A731D185DE0F000183A43 /* CBMDataModelBillMember.m */; };
@@ -146,6 +154,17 @@
 		F05AC3A1187512C900E42F13 /* CBMCellBillList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMCellBillList.m; sourceTree = "<group>"; };
 		F05AC3BE1877F6EA00E42F13 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
 		F05AC3BF1877F6EA00E42F13 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		F0713EA11883B7F600AA61A0 /* AMBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
+		F0713EA21883B7F600AA61A0 /* AMBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
+		F0713EA31883B7F600AA61A0 /* MYBlurIntroductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionView.h; sourceTree = "<group>"; };
+		F0713EA41883B7F600AA61A0 /* MYBlurIntroductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView.m; sourceTree = "<group>"; };
+		F0713EA51883B7F600AA61A0 /* MYIntroductionPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		F0713EA61883B7F600AA61A0 /* MYIntroductionPanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
+		F0713EAD1883BE2000AA61A0 /* ForkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForkImage.png; path = Resource/ForkImage.png; sourceTree = "<group>"; };
+		F0713EAE1883BE2000AA61A0 /* HeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HeaderImage.png; path = Resource/HeaderImage.png; sourceTree = "<group>"; };
+		F0713EAF1883BE2000AA61A0 /* TestHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestHeader.xib; path = Resource/TestHeader.xib; sourceTree = "<group>"; };
+		F0713EB01883BE2000AA61A0 /* TestPanel3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestPanel3.xib; path = Resource/TestPanel3.xib; sourceTree = "<group>"; };
+		F0713EB11883BE2000AA61A0 /* Toronto, ON.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Toronto, ON.jpg"; path = "Resource/Toronto, ON.jpg"; sourceTree = "<group>"; };
 		F07A7315185DA82C00183A43 /* CBMViewControllerAddGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMViewControllerAddGroup.h; sourceTree = "<group>"; };
 		F07A7316185DA82C00183A43 /* CBMViewControllerAddGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMViewControllerAddGroup.m; sourceTree = "<group>"; };
 		F07A7319185DAD3A00183A43 /* CBMDataModelGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMDataModelGroupMember.h; sourceTree = "<group>"; };
@@ -236,6 +255,7 @@
 		F0316597185C6C48001EC383 /* BillManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F0713EA01883B7F600AA61A0 /* MYBlurIntroductionView */,
 				F05AC3BD1877F6EA00E42F13 /* SWTableViewCell */,
 				F05AC3991875048B00E42F13 /* TableViewCustomize */,
 				F025B651187167BE00B1A2B1 /* MyLauncher */,
@@ -277,6 +297,11 @@
 		F0316598185C6C48001EC383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0713EAD1883BE2000AA61A0 /* ForkImage.png */,
+				F0713EAE1883BE2000AA61A0 /* HeaderImage.png */,
+				F0713EAF1883BE2000AA61A0 /* TestHeader.xib */,
+				F0713EB01883BE2000AA61A0 /* TestPanel3.xib */,
+				F0713EB11883BE2000AA61A0 /* Toronto, ON.jpg */,
 				F0445E6318716C5E00A0D2EF /* close.png */,
 				F0445E6418716C5E00A0D2EF /* Icon-iPad.png */,
 				F0445E6518716C5E00A0D2EF /* Icon.png */,
@@ -336,6 +361,19 @@
 				F05AC3BF1877F6EA00E42F13 /* SWTableViewCell.m */,
 			);
 			path = SWTableViewCell;
+			sourceTree = "<group>";
+		};
+		F0713EA01883B7F600AA61A0 /* MYBlurIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				F0713EA11883B7F600AA61A0 /* AMBlurView.h */,
+				F0713EA21883B7F600AA61A0 /* AMBlurView.m */,
+				F0713EA31883B7F600AA61A0 /* MYBlurIntroductionView.h */,
+				F0713EA41883B7F600AA61A0 /* MYBlurIntroductionView.m */,
+				F0713EA51883B7F600AA61A0 /* MYIntroductionPanel.h */,
+				F0713EA61883B7F600AA61A0 /* MYIntroductionPanel.m */,
+			);
+			path = MYBlurIntroductionView;
 			sourceTree = "<group>";
 		};
 		F083485A186D4C4700183D2D /* RefreshTableHeaderView */ = {
@@ -401,15 +439,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0713EB61883BE2000AA61A0 /* Toronto, ON.jpg in Resources */,
 				F031659C185C6C48001EC383 /* InfoPlist.strings in Resources */,
 				F03165AE185C6C49001EC383 /* MainStoryboard_iPad.storyboard in Resources */,
 				F0B33748185EF37700FC5CE3 /* Localizable.strings in Resources */,
 				F093158B186705720073E0F6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F05AC3A318753A2800E42F13 /* SectionHeaderView.xib in Resources */,
 				F05AC3A41877E14700E42F13 /* carat-open.png in Resources */,
+				F0713EB51883BE2000AA61A0 /* TestPanel3.xib in Resources */,
 				F05AC3A51877E14700E42F13 /* carat.png in Resources */,
 				F05AC3A61877E14700E42F13 /* Default-568h@2x.png in Resources */,
 				F05AC3A71877E14700E42F13 /* Default.png in Resources */,
+				F0713EB31883BE2000AA61A0 /* HeaderImage.png in Resources */,
 				F05AC3A81877E14700E42F13 /* Default@2x.png in Resources */,
 				F05AC3A91877E14700E42F13 /* icon0.png in Resources */,
 				F05AC3AA1877E14700E42F13 /* icon1.png in Resources */,
@@ -420,8 +461,10 @@
 				F05AC3AF1877E14F00E42F13 /* Icon.png in Resources */,
 				F05AC3B01877E14F00E42F13 /* Icon@2x.png in Resources */,
 				F05AC3B11877E14F00E42F13 /* itemImage-iPad.png in Resources */,
+				F0713EB41883BE2000AA61A0 /* TestHeader.xib in Resources */,
 				F05AC3B21877E14F00E42F13 /* itemImage.png in Resources */,
 				F05AC3B31877E14F00E42F13 /* itemImage@2x.png in Resources */,
+				F0713EB21883BE2000AA61A0 /* ForkImage.png in Resources */,
 				F05AC3B41877E14F00E42F13 /* launcher.png in Resources */,
 				F05AC3B51877E14F00E42F13 /* blackArrow.png in Resources */,
 				F05AC3B61877E14F00E42F13 /* blackArrow@2x.png in Resources */,
@@ -455,6 +498,7 @@
 				F025B6611871689600B1A2B1 /* CustomBadge.m in Sources */,
 				F07A7317185DA82C00183A43 /* CBMViewControllerAddGroup.m in Sources */,
 				F07A731B185DAD3A00183A43 /* CBMDataModelGroupMember.m in Sources */,
+				F0713EA71883B80900AA61A0 /* AMBlurView.m in Sources */,
 				F07A731E185DE0F000183A43 /* CBMDataModelBillMember.m in Sources */,
 				F07A7321185DE27100183A43 /* CBMViewControllerAddBill.m in Sources */,
 				F0B3372B185ED66700FC5CE3 /* CBMViewControllerAccountApply.m in Sources */,
@@ -462,8 +506,10 @@
 				F0931590186709380073E0F6 /* CBMViewControllerActionlist.m in Sources */,
 				F025B666187168AB00B1A2B1 /* MyLauncherViewController.m in Sources */,
 				F051E05818713EDC00D5FE7A /* EGORefreshTableHeaderView.m in Sources */,
+				F0713EA81883B80B00AA61A0 /* MYBlurIntroductionView.m in Sources */,
 				F025B662187168A000B1A2B1 /* MyLauncherItem.m in Sources */,
 				F0445E62187158DD00A0D2EF /* CBMViewControllerMemberList.m in Sources */,
+				F0713EA91883B80E00AA61A0 /* MYIntroductionPanel.m in Sources */,
 				F05AC39F1875048B00E42F13 /* CBMSectionHeaderView.m in Sources */,
 				F012D1B818754BE300440129 /* CBMSectionInfo.m in Sources */,
 				F05AC3A2187512C900E42F13 /* CBMCellBillList.m in Sources */,

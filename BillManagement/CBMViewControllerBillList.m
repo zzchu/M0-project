@@ -63,6 +63,7 @@ static NSString *SectionHeaderViewIdentifier = @"SectionHeaderViewIdentifier";
 		view.delegate = self;
 		[self.tableView addSubview:view];
 		_refreshHeaderView = view;
+        _reloading = NO;
 	}
 	//  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];

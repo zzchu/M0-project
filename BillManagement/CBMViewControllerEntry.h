@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MYBlurIntroductionView.h"
 
-@interface CBMViewControllerEntry : UIViewController
+@interface CBMViewControllerEntry : UIViewController <MYIntroductionDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *ivShowLogIn;
 @property (weak, nonatomic) IBOutlet UIImageView *ivShowOffLineTask;
