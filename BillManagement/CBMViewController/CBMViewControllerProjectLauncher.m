@@ -9,6 +9,7 @@
 #import "CBMViewControllerProjectLauncher.h"
 #import "MyLauncherItem.h"
 #import "CustomBadge.h"
+#import "CBMDataModel.h"
 
 @interface MyLauncherView (AddNewItemCategory)
 -(void)launcherViewAddNewItem:(MyLauncherItem*)item;
@@ -229,8 +230,10 @@
     }
     else if ([segue.identifier isEqualToString:@"UnwindSegueChildAddToProjectList"] == YES)
     {
+        CBMDataModelGroupMember* groupMember = (CBMDataModelGroupMember*)[segue.sourceViewController valueForKey:@"dataModelGroupMember"];
+        
         //Generate the new item
-        MyLauncherItem* newItem = [[MyLauncherItem alloc] initWithTitle:@"New Item"
+        MyLauncherItem* newItem = [[MyLauncherItem alloc] initWithTitle:groupMember.sGroupName
                                                             iPhoneImage:@"itemImage"
                                                               iPadImage:@"itemImage-iPad"
                                                                  target:@"ItemViewController"

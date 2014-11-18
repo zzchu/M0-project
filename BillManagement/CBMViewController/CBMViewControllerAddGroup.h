@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CBMDataModelGroupMember.h"
+#import "CBMDataModel.h"
 
 @interface CBMViewControllerAddGroup : UITableViewController
 @property (retain, nonatomic) CBMDataModelGroupMember *dataModelGroupMember;

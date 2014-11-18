@@ -96,6 +96,9 @@
     if (self.tfGroupName.text.length > 0 ) {
         self.dataModelGroupMember = [[CBMDataModelGroupMember alloc] init];
         self.dataModelGroupMember.sGroupName = self.tfGroupName.text;
+        //Save to the server
+        [[CBMDataModel instance] saveGroupMember:self.dataModelGroupMember];
+        
         [self performSegueWithIdentifier:@"UnwindSegueChildAddToProjectList" sender:self];
     }
     else
